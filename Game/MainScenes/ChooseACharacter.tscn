@@ -1,0 +1,271 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Assets/Fonts/KiriFont.ttf" type="FontFile" id=1]
+[ext_resource path="res://GlobalPlayerButton.gd" type="Script" id=2]
+[ext_resource path="res://Main Characters/Character1/IdleMelee-Stand/2.png" type="Texture2D" id=4]
+[ext_resource path="res://Main Characters/Character5/IdleMelee-Stand/2.png" type="Texture2D" id=5]
+[ext_resource path="res://Main Characters/Character3/IdleMelee-Stand/2.png" type="Texture2D" id=6]
+[ext_resource path="res://Main Characters/Character6/IdleMelee-Stand/2.png" type="Texture2D" id=7]
+[ext_resource path="res://Main Characters/Character2/IdleMelee-Stand/2.png" type="Texture2D" id=8]
+[ext_resource path="res://Main Characters/Character4/IdleMelee-Stand/2.png" type="Texture2D" id=9]
+[ext_resource path="res://Background PNGs/Background.png" type="Texture2D" id=14]
+
+[sub_resource type="FontFile" id=1]
+size = 50
+outline_size = 1
+outline_color = Color( 0.0313726, 0.00392157, 0.00392157, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="FontFile" id=2]
+size = 25
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+offset_left = -1.719
+offset_top = -1.3797
+offset_right = 1022.28
+offset_bottom = 598.62
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChooseACharacterLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.089
+offset_top = -244.889
+offset_right = 349.911
+offset_bottom = -193.889
+theme_override_fonts/font = SubResource( 1 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Choose A Character"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JuanImage" type="Sprite2D" parent="."]
+position = Vector2( 834.196, 215.215 )
+scale = Vector2( 0.78, 0.81 )
+texture = ExtResource( 4 )
+
+[node name="AllieImage" type="Sprite2D" parent="."]
+position = Vector2( 192, 224 )
+scale = Vector2( 0.787293, 0.824795 )
+texture = ExtResource( 8 )
+
+[node name="JordanImage" type="Sprite2D" parent="."]
+position = Vector2( 192, 448 )
+scale = Vector2( 0.951076, 0.84624 )
+texture = ExtResource( 7 )
+
+[node name="AshImage" type="Sprite2D" parent="."]
+position = Vector2( 518.682, 227.3 )
+scale = Vector2( 0.87368, 0.832447 )
+texture = ExtResource( 5 )
+
+[node name="KylieImage" type="Sprite2D" parent="."]
+position = Vector2( 832, 448 )
+scale = Vector2( 0.823606, 0.813918 )
+texture = ExtResource( 6 )
+
+[node name="FinnImage" type="Sprite2D" parent="."]
+position = Vector2( 512, 448 )
+scale = Vector2( 0.885223, 0.827835 )
+texture = ExtResource( 9 )
+
+[node name="AllieButton" type="Button" parent="."]
+offset_left = 96.0
+offset_top = 255.255
+offset_right = 300.0
+offset_bottom = 330.255
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_disabled_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 1, 1, 1, 1 )
+text = "Allie"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AllieButton2" type="Button" parent="."]
+offset_left = 151.0
+offset_top = 163.0
+offset_right = 242.0
+offset_bottom = 273.0
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 0.278431, 0.0117647, 0.396078, 1 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JuanButton" type="Button" parent="."]
+offset_left = 734.62
+offset_top = 254.62
+offset_right = 938.62
+offset_bottom = 329.62
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_disabled_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 1, 1, 1, 1 )
+text = "Juan"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JuanButton2" type="Button" parent="."]
+offset_left = 797.0
+offset_top = 155.677
+offset_right = 881.0
+offset_bottom = 273.677
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 0.278431, 0.0117647, 0.396078, 1 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KylieButton" type="Button" parent="."]
+offset_left = 736.0
+offset_top = 476.078
+offset_right = 940.0
+offset_bottom = 551.078
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_disabled_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 1, 1, 1, 1 )
+text = "Kylie"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KylieButton2" type="Button" parent="."]
+offset_left = 791.0
+offset_top = 387.089
+offset_right = 887.0
+offset_bottom = 497.089
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 0.278431, 0.0117647, 0.396078, 1 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FinnButton" type="Button" parent="."]
+offset_left = 407.722
+offset_top = 478.62
+offset_right = 611.722
+offset_bottom = 553.62
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 1, 1, 1, 1 )
+text = "Finn"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FinnButton2" type="Button" parent="."]
+offset_left = 463.0
+offset_top = 369.0
+offset_right = 566.0
+offset_bottom = 494.0
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 0.278431, 0.0117647, 0.396078, 1 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AshButton" type="Button" parent="."]
+offset_left = 416.0
+offset_top = 256.0
+offset_right = 620.0
+offset_bottom = 331.0
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 1, 1, 1, 1 )
+text = "Ash"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AshButton2" type="Button" parent="."]
+offset_left = 473.0
+offset_top = 165.0
+offset_right = 565.0
+offset_bottom = 275.0
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 0.278431, 0.0117647, 0.396078, 1 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JordanButton" type="Button" parent="."]
+offset_left = 125.071
+offset_top = 477.241
+offset_right = 257.071
+offset_bottom = 552.241
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_disabled_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 1, 1, 1, 1 )
+text = "Jordan"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JordanButton2" type="Button" parent="."]
+offset_left = 149.0
+offset_top = 386.0
+offset_right = 239.0
+offset_bottom = 501.0
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 0.278431, 0.0117647, 0.396078, 1 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="AllieButton" to="." method="_on_AllieButton_pressed"]
+[connection signal="pressed" from="AllieButton2" to="." method="_on_AllieButton2_pressed"]
+[connection signal="pressed" from="JuanButton" to="." method="_on_JuanButton_pressed"]
+[connection signal="pressed" from="JuanButton2" to="." method="_on_JuanButton2_pressed"]
+[connection signal="pressed" from="KylieButton" to="." method="_on_KylieButton_pressed"]
+[connection signal="pressed" from="KylieButton2" to="." method="_on_KylieButton2_pressed"]
+[connection signal="pressed" from="FinnButton" to="." method="_on_FinnButton_pressed"]
+[connection signal="pressed" from="FinnButton2" to="." method="_on_FinnButton2_pressed"]
+[connection signal="pressed" from="AshButton" to="." method="_on_AshButton_pressed"]
+[connection signal="pressed" from="AshButton2" to="." method="_on_AshButton2_pressed"]
+[connection signal="pressed" from="JordanButton" to="." method="_on_JordanButton_pressed"]
+[connection signal="pressed" from="JordanButton2" to="." method="_on_JordanButton2_pressed"]

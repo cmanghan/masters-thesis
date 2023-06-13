@@ -1,0 +1,953 @@
+[gd_scene load_steps=33 format=3]
+
+[ext_resource type="Texture2D" uid="uid://b5u5iiiwpfh4u" path="res://Assets/button_type2.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://s0hyht1raowi" path="res://Assets/UI elements/grey_button13.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://yw53dpb8138g" path="res://Background PNGs/Background.png" id="3"]
+[ext_resource type="FontFile" uid="uid://tieyoxpdci11" path="res://Assets/Fonts/KiriFont.ttf" id="4"]
+[ext_resource type="FontFile" uid="uid://dywj7osgsnofs" path="res://Assets/Fonts/Sniglet-Regular.ttf" id="5"]
+[ext_resource type="Texture2D" uid="uid://3w6qsp5mhsqq" path="res://Assets/UI elements/arrow-UP.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://e7dn33wafico" path="res://Assets/UI elements/grey_button04.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cgt4fgk1652c5" path="res://Assets/Fonts/potions_bg.png" id="8"]
+[ext_resource type="Script" path="res://Instructions.gd" id="9"]
+[ext_resource type="Texture2D" uid="uid://dxof7enjyhngl" path="res://Assets/Coins/gold_1.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://b2nnhoq4fyssf" path="res://Images/vine.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://c5taykb1rvujg" path="res://Assets/Enemy/slimeBlue_blue.png" id="12"]
+[ext_resource type="FontFile" uid="uid://b4b2jvi6upb5h" path="res://Assets/Fonts/BalsamiqSans-Bold.ttf" id="13"]
+[ext_resource type="Texture2D" uid="uid://cvdjo34v4h41q" path="res://DragonPNG/New Folder With Items/3.png" id="14"]
+
+[sub_resource type="FontFile" id=1]
+size = 25
+font_data = ExtResource( 5 )
+
+[sub_resource type="FontFile" id=2]
+size = 25
+font_data = ExtResource( 4 )
+
+[sub_resource type="FontFile" id=3]
+size = 30
+font_data = ExtResource( 4 )
+
+[sub_resource type="FontFile" id=4]
+size = 25
+font_data = ExtResource( 4 )
+
+[sub_resource type="FontFile" id=5]
+size = 28
+font_data = ExtResource( 4 )
+
+[sub_resource type="FontFile" id=6]
+size = 40
+font_data = ExtResource( 4 )
+
+[sub_resource type="FontFile" id=7]
+size = 40
+font_data = ExtResource( 4 )
+
+[sub_resource type="FontFile" id=8]
+size = 40
+font_data = ExtResource( 13 )
+
+[sub_resource type="FontFile" id=9]
+outline_color = Color( 0.0235294, 0.0235294, 0.0235294, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxEmpty" id=10]
+
+[sub_resource type="FontFile" id=11]
+font_data = ExtResource( 4 )
+
+[sub_resource type="CompressedTexture2D" id=12]
+flags = 4
+load_path = "res://.import/button_type2.png-041c3e9cb400ffd0e31fd2130ec5f67f.stex"
+
+[sub_resource type="FontFile" id=13]
+size = 30
+font_data = ExtResource( 13 )
+
+[sub_resource type="CompressedTexture2D" id=14]
+flags = 4
+load_path = "res://.import/button_type2.png-041c3e9cb400ffd0e31fd2130ec5f67f.stex"
+
+[sub_resource type="FontFile" id=15]
+size = 25
+font_data = ExtResource( 13 )
+
+[sub_resource type="CompressedTexture2D" id=16]
+flags = 4
+load_path = "res://.import/button_type2.png-041c3e9cb400ffd0e31fd2130ec5f67f.stex"
+
+[sub_resource type="CompressedTexture2D" id=17]
+flags = 4
+load_path = "res://.import/button_type2.png-041c3e9cb400ffd0e31fd2130ec5f67f.stex"
+
+[sub_resource type="FontFile" id=18]
+size = 30
+font_data = ExtResource( 4 )
+
+[node name="Instructions" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+offset_left = -2.0
+offset_right = 1028.0
+offset_bottom = 607.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InstructionSet" type="TextureRect" parent="."]
+offset_left = 106.221
+offset_top = 64.432
+offset_right = 918.221
+offset_bottom = 514.432
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InstructionsHolder" type="Control" parent="InstructionSet"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Set1" type="Control" parent="InstructionSet/InstructionsHolder"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SpaceBar" type="TextureRect" parent="InstructionSet/InstructionsHolder/Set1"]
+offset_left = 160.853
+offset_top = 161.085
+offset_right = 366.853
+offset_bottom = 200.085
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Space" type="Label" parent="InstructionSet/InstructionsHolder/Set1/SpaceBar"]
+offset_left = 65.9291
+offset_top = 3.1698
+offset_right = 138.929
+offset_bottom = 35.1698
+theme_override_fonts/font = SubResource( 1 )
+theme_override_colors/font_color = Color( 0.0745098, 0.0431373, 0.0431373, 1 )
+text = "SPACE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="or" type="Label" parent="InstructionSet/InstructionsHolder/Set1"]
+offset_left = 396.242
+offset_top = 167.549
+offset_right = 437.242
+offset_bottom = 193.549
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "or"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="use" type="Label" parent="InstructionSet/InstructionsHolder/Set1"]
+offset_left = 69.3242
+offset_top = 120.926
+offset_right = 144.324
+offset_bottom = 150.926
+theme_override_fonts/font = SubResource( 3 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "use:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="toJump" type="Label" parent="InstructionSet/InstructionsHolder/Set1"]
+offset_left = 538.389
+offset_top = 166.012
+offset_right = 690.389
+offset_bottom = 192.012
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "to JUMP!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UpButton" type="TextureRect" parent="InstructionSet/InstructionsHolder/Set1"]
+offset_left = 469.463
+offset_top = 156.475
+offset_right = 514.463
+offset_bottom = 198.475
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="UpArrow" type="TextureRect" parent="InstructionSet/InstructionsHolder/Set1/UpButton"]
+offset_left = 11.465
+offset_top = 7.66861
+offset_right = 35.465
+offset_bottom = 31.6686
+texture = ExtResource( 6 )
+expand = true
+
+[node name="LeftButton" type="TextureRect" parent="InstructionSet/InstructionsHolder/Set1"]
+offset_left = 180.242
+offset_top = 258.579
+offset_right = 225.242
+offset_bottom = 300.579
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RightArrow" type="TextureRect" parent="InstructionSet/InstructionsHolder/Set1/LeftButton"]
+offset_left = 34.1417
+offset_top = 9.36633
+offset_right = 58.1417
+offset_bottom = 33.3663
+rotation = 90.0
+texture = ExtResource( 6 )
+expand = true
+flip_v = true
+
+[node name="RightButton2" type="TextureRect" parent="InstructionSet/InstructionsHolder/Set1"]
+offset_left = 275.61
+offset_top = 258.579
+offset_right = 320.61
+offset_bottom = 300.579
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="RightArrow" type="TextureRect" parent="InstructionSet/InstructionsHolder/Set1/RightButton2"]
+offset_left = 10.5132
+offset_top = 31.6821
+offset_right = 34.5132
+offset_bottom = 55.6821
+rotation = -90.0
+texture = ExtResource( 6 )
+expand = true
+flip_v = true
+
+[node name="toMove" type="Label" parent="InstructionSet/InstructionsHolder/Set1"]
+offset_left = 359.905
+offset_top = 268.175
+offset_right = 518.905
+offset_bottom = 294.175
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "to MOVE!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextButton" type="TextureButton" parent="InstructionSet/InstructionsHolder/Set1"]
+offset_left = 597.779
+offset_top = 365.466
+offset_right = 773.779
+offset_bottom = 424.466
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="Label" parent="InstructionSet/InstructionsHolder/Set1/NextButton"]
+offset_left = 48.0
+offset_top = 16.0
+offset_right = 144.0
+offset_bottom = 42.0
+theme_override_fonts/font = SubResource( 4 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "NEXT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Set2" type="Control" parent="InstructionSet/InstructionsHolder"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="collect" type="Label" parent="InstructionSet/InstructionsHolder/Set2"]
+offset_left = 72.877
+offset_top = 222.574
+offset_right = 756.877
+offset_bottom = 252.574
+theme_override_fonts/font = SubResource( 5 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Collect as many       as you can"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="jump" type="Label" parent="InstructionSet/InstructionsHolder/Set2"]
+offset_left = 69.8034
+offset_top = 300.952
+offset_right = 753.803
+offset_bottom = 330.952
+theme_override_fonts/font = SubResource( 5 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Jump on  the bully blobs        to squish them"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slimeBlue_blue" type="Sprite2D" parent="InstructionSet/InstructionsHolder/Set2/jump"]
+position = Vector2( 526.603, 8.37738 )
+texture = ExtResource( 12 )
+
+[node name="catch" type="Label" parent="InstructionSet/InstructionsHolder/Set2"]
+offset_left = 76.3287
+offset_top = 117.989
+offset_right = 760.329
+offset_bottom = 180.989
+theme_override_fonts/font = SubResource( 5 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Catch the vines       to fly with Dragons"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gold_1" type="Sprite2D" parent="InstructionSet/InstructionsHolder/Set2"]
+position = Vector2( 437.382, 230.657 )
+scale = Vector2( 0.849078, 0.735887 )
+texture = ExtResource( 10 )
+
+[node name="vine" type="Sprite2D" parent="InstructionSet/InstructionsHolder/Set2"]
+position = Vector2( 426.997, 133.729 )
+rotation = 0.867429
+scale = Vector2( 1.84506, 3.36335 )
+texture = ExtResource( 11 )
+
+[node name="PlayButton" type="TextureButton" parent="InstructionSet/InstructionsHolder/Set2"]
+offset_left = 597.779
+offset_top = 365.466
+offset_right = 773.779
+offset_bottom = 424.466
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Label" parent="InstructionSet/InstructionsHolder/Set2/PlayButton"]
+offset_left = 48.0
+offset_top = 16.0
+offset_right = 144.0
+offset_bottom = 42.0
+theme_override_fonts/font = SubResource( 4 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "PLAY!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Header" type="Label" parent="InstructionSet/InstructionsHolder"]
+offset_left = 64.5665
+offset_top = 36.293
+offset_right = 742.566
+offset_bottom = 114.293
+theme_override_fonts/font = SubResource( 6 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Instructions:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quest" type="Control" parent="InstructionSet"]
+visible = false
+offset_left = -106.221
+offset_top = -71.045
+offset_right = -66.221
+offset_bottom = -31.045
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Header" type="Label" parent="InstructionSet/Quest"]
+offset_left = 170.788
+offset_top = 107.338
+offset_right = 848.787
+offset_bottom = 185.338
+theme_override_fonts/font = SubResource( 7 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Your Quest:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Header2" type="Label" parent="InstructionSet/Quest"]
+offset_left = 150.463
+offset_top = 208.515
+offset_right = 870.463
+offset_bottom = 460.515
+theme_override_fonts/font = SubResource( 8 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Oh no! Cairdeas Kingdom was just invaded by bullies from Angerville. Davy Dragon needs your help to stop the bullying and recover the Kingdom's stolen kindness coins!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dragon" type="Sprite2D" parent="InstructionSet/Quest"]
+position = Vector2( 762.563, 129.874 )
+texture = ExtResource( 14 )
+flip_h = true
+
+[node name="NextButton2" type="TextureButton" parent="InstructionSet/Quest"]
+offset_left = 704.0
+offset_top = 436.511
+offset_right = 880.0
+offset_bottom = 495.511
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="Label" parent="InstructionSet/Quest/NextButton2"]
+offset_left = 48.0
+offset_top = 16.0
+offset_right = 144.0
+offset_bottom = 42.0
+theme_override_fonts/font = SubResource( 4 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "NEXT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Age" type="Control" parent="InstructionSet"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Header2" type="Label" parent="InstructionSet/Age"]
+offset_left = 165.39
+offset_top = 38.8683
+offset_right = 667.39
+offset_bottom = 116.868
+theme_override_fonts/font = SubResource( 6 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Select Your Age:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Age5" type="TextureButton" parent="InstructionSet/Age"]
+offset_left = 165.779
+offset_top = 107.621
+offset_right = 369.779
+offset_bottom = 151.621
+texture_normal = ExtResource( 1 )
+expand = true
+
+[node name="Label" type="Label" parent="InstructionSet/Age/Age5"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "5"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Age6" type="TextureButton" parent="InstructionSet/Age"]
+offset_left = 165.779
+offset_top = 171.621
+offset_right = 369.779
+offset_bottom = 215.621
+texture_normal = ExtResource( 1 )
+expand = true
+
+[node name="Label" type="Label" parent="InstructionSet/Age/Age6"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "6"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Age7" type="TextureButton" parent="InstructionSet/Age"]
+offset_left = 165.779
+offset_top = 235.621
+offset_right = 369.779
+offset_bottom = 279.621
+texture_normal = ExtResource( 1 )
+expand = true
+
+[node name="Label" type="Label" parent="InstructionSet/Age/Age7"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "7"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Age8" type="TextureButton" parent="InstructionSet/Age"]
+offset_left = 165.779
+offset_top = 299.621
+offset_right = 369.779
+offset_bottom = 343.621
+texture_normal = ExtResource( 1 )
+expand = true
+
+[node name="Label" type="Label" parent="InstructionSet/Age/Age8"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "8"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Age9" type="TextureButton" parent="InstructionSet/Age"]
+offset_left = 165.779
+offset_top = 363.621
+offset_right = 369.779
+offset_bottom = 407.621
+texture_normal = ExtResource( 1 )
+expand = true
+
+[node name="Label" type="Label" parent="InstructionSet/Age/Age9"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "9"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Age10" type="TextureButton" parent="InstructionSet/Age"]
+offset_left = 405.779
+offset_top = 107.621
+offset_right = 609.779
+offset_bottom = 151.621
+texture_normal = ExtResource( 1 )
+expand = true
+
+[node name="Label" type="Label" parent="InstructionSet/Age/Age10"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "10"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Age11" type="TextureButton" parent="InstructionSet/Age"]
+offset_left = 405.779
+offset_top = 171.621
+offset_right = 609.779
+offset_bottom = 215.621
+texture_normal = ExtResource( 1 )
+expand = true
+
+[node name="Label" type="Label" parent="InstructionSet/Age/Age11"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "11"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Age12" type="TextureButton" parent="InstructionSet/Age"]
+offset_left = 405.779
+offset_top = 235.621
+offset_right = 609.779
+offset_bottom = 279.621
+pivot_offset = Vector2( 176, 48 )
+texture_normal = ExtResource( 1 )
+expand = true
+
+[node name="Label" type="Label" parent="InstructionSet/Age/Age12"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "12"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Age13" type="TextureButton" parent="InstructionSet/Age"]
+offset_left = 405.779
+offset_top = 299.621
+offset_right = 609.779
+offset_bottom = 343.621
+pivot_offset = Vector2( 176, 48 )
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="InstructionSet/Age/Age13"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "13+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AgeNext" type="TextureButton" parent="InstructionSet/Age/Age13"]
+offset_left = 192.0
+offset_top = 65.845
+offset_right = 368.0
+offset_bottom = 124.845
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="Label" parent="InstructionSet/Age/Age13/AgeNext"]
+offset_left = 48.0
+offset_top = 16.0
+offset_right = 144.0
+offset_bottom = 42.0
+theme_override_fonts/font = SubResource( 4 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "NEXT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="InstructionSet/Age/Age13"]
+offset_left = 17.7858
+offset_top = 2.35712
+offset_right = 191.786
+offset_bottom = 42.3571
+theme_override_styles/normal = SubResource( 10 )
+theme_override_fonts/font = SubResource( 11 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+placeholder_text = "Enter Age Here"
+placeholder_alpha = 0.807
+
+[node name="Gender" type="Control" parent="InstructionSet"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Boy" type="TextureButton" parent="InstructionSet/Gender"]
+offset_left = 65.9201
+offset_top = 196.162
+offset_right = 269.92
+offset_bottom = 240.162
+pivot_offset = Vector2( 176, 48 )
+texture_normal = SubResource( 12 )
+expand = true
+
+[node name="Label" type="Label" parent="InstructionSet/Gender/Boy"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Boy"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Girl" type="TextureButton" parent="InstructionSet/Gender"]
+offset_left = 303.949
+offset_top = 197.435
+offset_right = 507.949
+offset_bottom = 241.435
+pivot_offset = Vector2( 176, 48 )
+texture_normal = ExtResource( 1 )
+expand = true
+
+[node name="Label" type="Label" parent="InstructionSet/Gender/Girl"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Girl"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Other" type="TextureButton" parent="InstructionSet/Gender"]
+offset_left = 545.796
+offset_top = 197.435
+offset_right = 749.796
+offset_bottom = 241.435
+pivot_offset = Vector2( 176, 48 )
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="InstructionSet/Gender/Other"]
+offset_left = 44.7858
+offset_top = 2.35713
+offset_right = 146.786
+offset_bottom = 41.3571
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Other"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Header3" type="Label" parent="InstructionSet/Gender"]
+offset_left = 139.932
+offset_top = 37.5954
+offset_right = 683.932
+offset_bottom = 115.595
+theme_override_fonts/font = SubResource( 6 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Select Your Gender:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Survey" type="Control" parent="InstructionSet"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Header4" type="Label" parent="InstructionSet/Survey"]
+offset_left = 97.5823
+offset_top = 155.09
+offset_right = 751.582
+offset_bottom = 233.09
+theme_override_fonts/font = SubResource( 13 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "I would tell a parent or teacher about a bully even if they might bully me next if I tell"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Yes" type="TextureButton" parent="InstructionSet/Survey"]
+offset_left = 65.4169
+offset_top = 265.874
+offset_right = 269.417
+offset_bottom = 309.874
+pivot_offset = Vector2( 176, 48 )
+texture_normal = SubResource( 14 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label3" type="Label" parent="InstructionSet/Survey/Yes"]
+offset_left = 86.9395
+offset_top = 6.52945
+offset_right = 126.94
+offset_bottom = 37.5294
+theme_override_fonts/font = SubResource( 15 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Yes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="No" type="TextureButton" parent="InstructionSet/Survey"]
+offset_left = 537.137
+offset_top = 267.263
+offset_right = 741.137
+offset_bottom = 311.263
+pivot_offset = Vector2( 176, 48 )
+texture_normal = SubResource( 16 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label2" type="Label" parent="InstructionSet/Survey/No"]
+offset_left = 71.968
+offset_top = 5.14056
+offset_right = 111.968
+offset_bottom = 36.1406
+theme_override_fonts/font = SubResource( 15 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "No"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Maybe" type="TextureButton" parent="InstructionSet/Survey"]
+offset_left = 299.112
+offset_top = 267.263
+offset_right = 503.112
+offset_bottom = 311.263
+pivot_offset = Vector2( 176, 48 )
+texture_normal = SubResource( 17 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label4" type="Label" parent="InstructionSet/Survey/Maybe"]
+offset_left = 70.6829
+offset_top = 5.14056
+offset_right = 146.683
+offset_bottom = 36.1406
+theme_override_fonts/font = SubResource( 15 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Maybe"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Header5" type="Label" parent="InstructionSet/Survey"]
+offset_left = 200.245
+offset_top = 65.0
+offset_right = 603.245
+offset_bottom = 143.0
+theme_override_fonts/font = SubResource( 6 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Do You Agree?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Loading" type="TextureRect" parent="."]
+visible = false
+offset_left = 178.605
+offset_top = 178.839
+offset_right = 830.605
+offset_bottom = 462.839
+texture = ExtResource( 8 )
+expand = true
+
+[node name="LoadingLabel" type="Label" parent="Loading"]
+offset_left = 234.191
+offset_top = 110.134
+offset_right = 417.191
+offset_bottom = 140.134
+theme_override_fonts/font = SubResource( 18 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Loading..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LoadingTimer" type="Timer" parent="Loading"]
+wait_time = 0.2
+[connection signal="pressed" from="InstructionSet/InstructionsHolder/Set1/NextButton" to="." method="_on_NextButton_pressed"]
+[connection signal="pressed" from="InstructionSet/InstructionsHolder/Set2/PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="InstructionSet/Quest/NextButton2" to="." method="_on_NextButton2_pressed"]
+[connection signal="pressed" from="InstructionSet/Age/Age5" to="." method="_on_Age5_pressed"]
+[connection signal="pressed" from="InstructionSet/Age/Age6" to="." method="_on_Age6_pressed"]
+[connection signal="pressed" from="InstructionSet/Age/Age7" to="." method="_on_Age7_pressed"]
+[connection signal="pressed" from="InstructionSet/Age/Age8" to="." method="_on_Age8_pressed"]
+[connection signal="pressed" from="InstructionSet/Age/Age9" to="." method="_on_Age9_pressed"]
+[connection signal="pressed" from="InstructionSet/Age/Age10" to="." method="_on_Age10_pressed"]
+[connection signal="pressed" from="InstructionSet/Age/Age11" to="." method="_on_Age11_pressed"]
+[connection signal="pressed" from="InstructionSet/Age/Age12" to="." method="_on_Age12_pressed"]
+[connection signal="pressed" from="InstructionSet/Age/Age13" to="." method="_on_Age13_pressed"]
+[connection signal="pressed" from="InstructionSet/Age/Age13/AgeNext" to="." method="_on_AgeNext_pressed"]
+[connection signal="text_changed" from="InstructionSet/Age/Age13/LineEdit" to="." method="_on_LineEdit_text_changed"]
+[connection signal="pressed" from="InstructionSet/Gender/Boy" to="." method="_on_Boy_pressed"]
+[connection signal="pressed" from="InstructionSet/Gender/Girl" to="." method="_on_Girl_pressed"]
+[connection signal="pressed" from="InstructionSet/Gender/Other" to="." method="_on_Other_pressed"]
+[connection signal="pressed" from="InstructionSet/Survey/Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="InstructionSet/Survey/No" to="." method="_on_No_pressed"]
+[connection signal="pressed" from="InstructionSet/Survey/Maybe" to="." method="_on_Maybe_pressed"]
+[connection signal="timeout" from="Loading/LoadingTimer" to="." method="_on_LoadingTimer_timeout"]

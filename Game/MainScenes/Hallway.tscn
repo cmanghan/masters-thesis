@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Texture2D" uid="uid://dxyel6bk305ps" path="res://Images/1269.jpg" id="1"]
+[ext_resource type="PackedScene" path="res://NPCs/Bystanders/Bystander1.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://Bullies/Bully1.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://Victim1.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://NPCs/salamandar/Salamandar.tscn" id="5"]
+[ext_resource type="Script" path="res://Hallway.gd" id="6"]
+
+[node name="Control" type="Control"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="HallwayImage" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 514.256, 301.843 )
+scale = Vector2( 0.170527, 0.200929 )
+texture = ExtResource( 1 )
+
+[node name="HallwayVictim" parent="." instance=ExtResource( 4 )]
+position = Vector2( 382.635, 395.539 )
+
+[node name="HallwayBully" parent="." instance=ExtResource( 3 )]
+position = Vector2( 481.509, 398.754 )
+
+[node name="HallwayBystander" parent="." instance=ExtResource( 2 )]
+position = Vector2( 114.629, 510.013 )
+scale = Vector2( 1.3, 1.3 )
+
+[node name="CharacterBody2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 19.2272, 173.686 )

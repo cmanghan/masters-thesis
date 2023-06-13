@@ -1,0 +1,84 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/Enemy/slimeBlue_squashed.png" type="Texture2D" id=1]
+[ext_resource path="res://Assets/Enemy/slimeBlue.png" type="Texture2D" id=2]
+[ext_resource path="res://Assets/Enemy/slimeBlue_blue.png" type="Texture2D" id=3]
+[ext_resource path="res://Enemy.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Sound Effects/pepSound2.ogg" type="AudioStream" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "squashed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "crawl",
+"speed": 3.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+size = Vector2( 19.082, 12.6993 )
+
+[sub_resource type="RectangleShape2D" id=3]
+size = Vector2( 17.3735, 1.86554 )
+
+[sub_resource type="RectangleShape2D" id=4]
+size = Vector2( 24.6203, 8.36564 )
+
+[node name="Enemy" type="CharacterBody2D"]
+collision_layer = 16
+collision_mask = 3
+script = ExtResource( 4 )
+
+[node name="EnemySprite" type="AnimatedSprite2D" parent="."]
+frames = SubResource( 1 )
+animation = "crawl"
+playing = true
+
+[node name="EnemyCollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.325134, 4.41793 )
+shape = SubResource( 2 )
+
+[node name="enemytop_checker" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 33
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemytop_checker"]
+modulate = Color( 0.137255, 0.101961, 0.235294, 1 )
+position = Vector2( 0.203701, -10.7929 )
+shape = SubResource( 3 )
+
+[node name="enemysides_checker" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 33
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemysides_checker"]
+modulate = Color( 0.0980392, 0.0627451, 0.25098, 1 )
+position = Vector2( -0.517879, 6.31812 )
+shape = SubResource( 4 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="SoundSquashed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = 13.0
+
+[node name="ground_checker" type="RayCast2D" parent="."]
+position = Vector2( 0.183334, -0.727007 )
+enabled = true
+target_position = Vector2( 0, 20 )
+collision_mask = 2
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2( 0.550007, 7.05842 )
+scale = Vector2( 2.65002, 0.880832 )
+[connection signal="body_entered" from="enemytop_checker" to="." method="_on_top_checker_body_entered"]
+[connection signal="body_entered" from="enemysides_checker" to="." method="_on_sides_checker_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="viewport_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_VisibilityNotifier2D_viewport_entered"]
+[connection signal="viewport_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_VisibilityNotifier2D_viewport_exited"]

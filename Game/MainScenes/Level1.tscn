@@ -1,0 +1,2205 @@
+[gd_scene load_steps=114 format=3]
+
+[ext_resource type="TileSet" path="res://WorldTileSet.tres" id="1"]
+[ext_resource type="PackedScene" path="res://Victim1.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://d3gyisdusncx0" path="res://Assets/Fonts/left_arrow.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bwm46al2rh31e" path="res://Background PNGs/trees.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://c5khgi34p2rge" path="res://Background PNGs/clouds_back_layer2.png" id="5"]
+[ext_resource type="PackedScene" path="res://Coin.tscn" id="6"]
+[ext_resource type="Texture2D" uid="uid://bpnsd31ucbn5h" path="res://Assets/HUD/coin_gold.png" id="7"]
+[ext_resource type="FontFile" uid="uid://b4b2jvi6upb5h" path="res://Assets/Fonts/BalsamiqSans-Bold.ttf" id="8"]
+[ext_resource type="Script" path="res://HUD.gd" id="9"]
+[ext_resource type="PackedScene" path="res://Enemy.tscn" id="10"]
+[ext_resource type="Texture2D" uid="uid://cfpwjdgtfji6b" path="res://Assets/Fonts/+.png" id="11"]
+[ext_resource type="PackedScene" path="res://Bullies/Bully1.tscn" id="12"]
+[ext_resource type="Script" path="res://Level1.gd" id="13"]
+[ext_resource type="PackedScene" uid="uid://cwifuae75splr" path="res://NPCs/Bystanders/Bystander1.tscn" id="14"]
+[ext_resource type="PackedScene" uid="uid://dwsw2ccg8y23w" path="res://Bullies/Bully2.tscn" id="15"]
+[ext_resource type="Script" path="res://NPCs/Dragons/Dragon7.gd" id="16"]
+[ext_resource type="Texture2D" uid="uid://b5u5iiiwpfh4u" path="res://Assets/button_type2.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://cwvmvyona5esi" path="res://Images/sky.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://c0asxmhi22vc4" path="res://Background PNGs/mountains.png" id="19"]
+[ext_resource type="PackedScene" path="res://NPCs/Dragons/Dragon.tscn" id="20"]
+[ext_resource type="Texture2D" uid="uid://dyxee3q2fb7bl" path="res://Background PNGs/coluds_small.png" id="21"]
+[ext_resource type="Script" path="res://NPCs/Dragons/Dragon8.gd" id="22"]
+[ext_resource type="PackedScene" path="res://NPCs/salamandar/Salamandar.tscn" id="23"]
+[ext_resource type="FontFile" uid="uid://tieyoxpdci11" path="res://Assets/Fonts/KiriFont.ttf" id="24"]
+[ext_resource type="Texture2D" uid="uid://cgt4fgk1652c5" path="res://Assets/Fonts/potions_bg.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://bc3gaqoglhhg4" path="res://Images/1849.jpg" id="26"]
+[ext_resource type="Texture2D" uid="uid://dxyel6bk305ps" path="res://Images/1269.jpg" id="27"]
+[ext_resource type="Texture2D" uid="uid://dcc4qt1fp3scr" path="res://Background PNGs/clouds_back_layer1.png" id="28"]
+[ext_resource type="Script" path="res://NPCs/Dragons/Dragon.gd" id="29"]
+[ext_resource type="Texture2D" uid="uid://b2nnhoq4fyssf" path="res://Images/vine.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://ewuuckva83r6" path="res://Images/phone.png" id="31"]
+[ext_resource type="PackedScene" path="res://Bullies/Bully3.tscn" id="32"]
+[ext_resource type="Texture2D" uid="uid://dtr4ipxlepy7i" path="res://Images/kissclipart-tripod-icon-clipart-computer-icons-tripod-clip-art-fedca9809547d3db.png" id="33"]
+[ext_resource type="Script" path="res://NPCs/Dragons/Dragon2.gd" id="34"]
+[ext_resource type="PackedScene" path="res://Bullies/Bully4.tscn" id="35"]
+[ext_resource type="Texture2D" uid="uid://chi8vqfve77ki" path="res://Images/631.jpg" id="36"]
+[ext_resource type="PackedScene" path="res://NPCs/Bystanders/Bystander2.tscn" id="37"]
+[ext_resource type="PackedScene" path="res://NPCs/Bystanders/Bystander3.tscn" id="38"]
+[ext_resource type="PackedScene" path="res://NPCs/Bystanders/Bystander4.tscn" id="39"]
+[ext_resource type="PackedScene" path="res://NPCs/Bystanders/Bystander5.tscn" id="40"]
+[ext_resource type="Script" path="res://NPCs/Dragons/Dragon3.gd" id="41"]
+[ext_resource type="PackedScene" path="res://Victim3.tscn" id="42"]
+[ext_resource type="PackedScene" path="res://NPCs/Bystanders/Bystander7.tscn" id="43"]
+[ext_resource type="Texture2D" uid="uid://c1eoud8x4qk3" path="res://Images/46891.jpg" id="44"]
+[ext_resource type="PackedScene" path="res://NPCs/Bystanders/Bystander6.tscn" id="45"]
+[ext_resource type="Texture2D" uid="uid://ddtxd4odpjckf" path="res://Images/basketball.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://dih7aja2isxw3" path="res://Images/hockeystick.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://cwhsqfrjtberv" path="res://Images/1809587.png" id="48"]
+[ext_resource type="Script" path="res://NPCs/Dragons/Dragon4.gd" id="49"]
+[ext_resource type="Texture2D" uid="uid://clvie2b38ki0e" path="res://Images/heart.png" id="50"]
+[ext_resource type="Script" path="res://NPCs/Dragons/dragon6.gd" id="51"]
+[ext_resource type="Texture2D" uid="uid://bb8ovlh8abs6d" path="res://Assets/Fonts/-1.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://db87ym2ukulqq" path="res://Assets/Cartoon_Forest_BG_02/Cartoon_Forest_BG_02.png" id="53"]
+[ext_resource type="Script" path="res://NPCs/Dragons/Dragon5.gd" id="54"]
+[ext_resource type="FontFile" uid="uid://dx8p088cu0cui" path="res://times-new-roman.ttf" id="55"]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+size = Vector2( 551.899, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+size = Vector2( 1054.87, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+size = Vector2( 1019.14, 10 )
+
+[sub_resource type="RectangleShape2D" id=5]
+size = Vector2( 1019.14, 10 )
+
+[sub_resource type="RectangleShape2D" id=6]
+size = Vector2( 2647.01, 10 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.0196078, 0.0196078, 0.0196078, 0.129412 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="FontFile" id=8]
+size = 45
+font_data = ExtResource( 8 )
+
+[sub_resource type="FontFile" id=9]
+size = 50
+outline_color = Color( 0.2, 0.231373, 0.309804, 1 )
+font_data = ExtResource( 8 )
+
+[sub_resource type="FontFile" id=10]
+size = 20
+font_data = ExtResource( 55 )
+
+[sub_resource type="FontFile" id=11]
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=12]
+size = 20
+font_data = ExtResource( 55 )
+
+[sub_resource type="FontFile" id=13]
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=14]
+size = 70
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=15]
+size = 70
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=16]
+size = 50
+font_data = ExtResource( 24 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.0196078, 0.0196078, 0.0196078, 0.129412 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.0196078, 0.0196078, 0.0196078, 0.129412 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0.0196078, 0.0196078, 0.0196078, 0.129412 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0.0196078, 0.0196078, 0.0196078, 0.129412 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="FontFile" id=21]
+size = 150
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=22]
+size = 60
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=23]
+size = 45
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=24]
+size = 40
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=25]
+size = 40
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=26]
+size = 40
+font_data = ExtResource( 24 )
+
+[sub_resource type="StyleBoxEmpty" id=27]
+
+[sub_resource type="FontFile" id=28]
+size = 33
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=29]
+size = 20
+font_data = ExtResource( 24 )
+
+[sub_resource type="RectangleShape2D" id=30]
+size = Vector2( 474.862, 10 )
+
+[sub_resource type="RectangleShape2D" id=31]
+size = Vector2( 510.337, 10 )
+
+[sub_resource type="FontFile" id=32]
+size = 70
+font_data = ExtResource( 24 )
+
+[sub_resource type="RectangleShape2D" id=33]
+size = Vector2( 2489.43, 10 )
+
+[sub_resource type="RectangleShape2D" id=34]
+size = Vector2( 2097.14, 10 )
+
+[sub_resource type="FontFile" id=35]
+font_data = ExtResource( 24 )
+
+[sub_resource type="RectangleShape2D" id=36]
+size = Vector2( 105.664, 15.1667 )
+
+[sub_resource type="CompressedTexture2D" id=37]
+flags = 4
+load_path = "res://.import/potions_bg.png-5e2f67effc31793bdb0a854a4b35d622.stex"
+
+[sub_resource type="FontFile" id=38]
+size = 50
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=39]
+size = 30
+font_data = ExtResource( 8 )
+
+[sub_resource type="FontFile" id=40]
+size = 35
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=41]
+size = 150
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=42]
+size = 100
+font_data = ExtResource( 24 )
+
+[sub_resource type="RectangleShape2D" id=43]
+size = Vector2( 2489.43, 10 )
+
+[sub_resource type="RectangleShape2D" id=44]
+size = Vector2( 2489.43, 10 )
+
+[sub_resource type="FontFile" id=45]
+size = 30
+font_data = ExtResource( 24 )
+
+[sub_resource type="FontFile" id=46]
+size = 23
+font_data = ExtResource( 24 )
+
+[sub_resource type="CompressedTexture2D" id=47]
+flags = 4
+load_path = "res://.import/button_type2.png-041c3e9cb400ffd0e31fd2130ec5f67f.stex"
+
+[sub_resource type="RectangleShape2D" id=48]
+size = Vector2( 101.535, 10 )
+
+[sub_resource type="CapsuleShape2D" id=49]
+radius = 1.40405
+height = 66.1866
+
+[sub_resource type="CapsuleShape2D" id=50]
+radius = 2.69482
+height = 404.962
+
+[sub_resource type="CapsuleShape2D" id=51]
+radius = 1.4292
+height = 168.282
+
+[sub_resource type="CapsuleShape2D" id=52]
+radius = 3.26367
+height = 148.948
+
+[sub_resource type="RectangleShape2D" id=53]
+size = Vector2( 96.7236, 17.5452 )
+
+[sub_resource type="RectangleShape2D" id=54]
+size = Vector2( 195.627, 10 )
+
+[sub_resource type="RectangleShape2D" id=55]
+size = Vector2( 112.047, 7.75659 )
+
+[sub_resource type="CapsuleShape2D" id=56]
+radius = 21.0817
+height = 675.61
+
+[sub_resource type="RectangleShape2D" id=57]
+size = Vector2( 7511.2, 10 )
+
+[sub_resource type="RectangleShape2D" id=58]
+size = Vector2( 5.26367, 669.32 )
+
+[node name="Level1" type="Node2D"]
+script = ExtResource( 13 )
+
+[node name="Tiles Solid" type="TileMap" parent="."]
+position = Vector2( 1, 0 )
+tile_set = ExtResource( 1 )
+collision_layer = 2
+collision_mask = 49
+format = 1
+tile_data = PackedInt32Array( 65602, 12, 0, 65603, 18, 0, 65604, 18, 0, 65605, 18, 0, 65606, 18, 0, 65607, 11, 0, 131112, 12, 0, 131113, 18, 0, 131114, 18, 0, 131115, 18, 0, 131116, 18, 0, 131117, 11, 0, 131144, 12, 0, 131145, 18, 0, 131146, 18, 0, 131147, 18, 0, 131148, 18, 0, 131149, 18, 0, 131150, 11, 0, 196612, 12, 0, 196613, 18, 0, 196614, 18, 0, 196615, 18, 0, 196616, 18, 0, 196617, 18, 0, 196618, 11, 0, 196623, 12, 0, 196624, 11, 0, 196673, 12, 0, 196674, 11, 0, 327672, 16, 0, 262181, 12, 0, 262182, 18, 0, 262183, 18, 0, 262184, 11, 0, 262202, 12, 0, 262203, 18, 0, 262204, 18, 0, 262205, 18, 0, 262206, 18, 0, 262207, 18, 0, 262208, 18, 0, 262209, 18, 0, 262210, 11, 0, 262222, 12, 0, 262223, 18, 0, 262224, 18, 0, 262225, 18, 0, 262226, 11, 0, 262251, 12, 0, 262252, 18, 0, 262253, 18, 0, 262254, 18, 0, 262255, 18, 0, 262256, 11, 0, 262266, 12, 0, 262267, 18, 0, 262268, 18, 0, 262269, 18, 0, 262270, 18, 0, 262271, 18, 0, 262272, 11, 0, 393208, 16, 0, 393215, 12, 0, 327680, 18, 0, 327681, 18, 0, 327682, 18, 0, 327683, 18, 0, 327684, 18, 0, 327685, 11, 0, 327692, 12, 0, 327693, 18, 0, 327694, 18, 0, 327695, 11, 0, 327698, 12, 0, 327699, 18, 0, 327700, 18, 0, 327701, 18, 0, 327702, 18, 0, 327703, 18, 0, 327704, 11, 0, 327723, 12, 0, 327724, 18, 0, 327725, 18, 0, 327726, 18, 0, 327727, 18, 0, 327728, 11, 0, 327737, 12, 0, 327738, 11, 0, 458744, 16, 0, 393249, 12, 0, 393250, 18, 0, 393251, 11, 0, 393270, 12, 0, 393271, 18, 0, 393272, 18, 0, 393273, 11, 0, 393298, 12, 0, 393299, 18, 0, 393300, 18, 0, 393301, 18, 0, 393302, 11, 0, 393316, 12, 0, 393317, 18, 0, 393318, 18, 0, 393319, 18, 0, 393320, 18, 0, 393321, 18, 0, 393322, 18, 0, 393323, 18, 0, 393324, 11, 0, 393336, 12, 0, 393337, 18, 0, 393338, 18, 0, 393339, 18, 0, 393340, 11, 0, 393344, 12, 0, 393345, 18, 0, 393346, 18, 0, 393347, 18, 0, 393348, 18, 0, 393349, 18, 0, 393350, 11, 0, 393362, 12, 0, 393363, 18, 0, 393364, 18, 0, 393365, 18, 0, 393366, 11, 0, 393396, 12, 0, 393397, 18, 0, 393398, 18, 0, 393399, 18, 0, 393400, 18, 0, 393401, 18, 0, 393402, 11, 0, 524280, 16, 0, 458768, 12, 0, 458769, 11, 0, 458779, 12, 0, 458780, 11, 0, 458848, 12, 0, 458849, 18, 0, 458850, 18, 0, 458851, 18, 0, 458852, 11, 0, 458903, 12, 0, 458904, 18, 0, 458905, 18, 0, 458906, 18, 0, 458907, 11, 0, 589816, 16, 0, 589817, 8, 0, 589818, 8, 0, 589819, 8, 0, 589820, 8, 0, 589821, 8, 0, 589822, 8, 0, 589823, 8, 0, 524288, 8, 0, 524289, 8, 0, 524290, 8, 0, 524291, 8, 0, 524292, 8, 0, 524293, 8, 0, 524294, 8, 0, 524295, 8, 0, 524296, 8, 0, 524297, 8, 0, 524298, 8, 0, 524299, 8, 0, 524300, 8, 0, 524301, 11, 0, 524310, 7, 0, 524311, 8, 0, 524312, 8, 0, 524313, 8, 0, 524314, 8, 0, 524315, 8, 0, 524316, 8, 0, 524317, 8, 0, 524318, 8, 0, 524319, 8, 0, 524320, 9, 0, 524323, 12, 0, 524324, 18, 0, 524325, 18, 0, 524326, 18, 0, 524327, 11, 0, 524333, 12, 0, 524334, 8, 0, 524335, 8, 0, 524336, 8, 0, 524337, 8, 0, 524338, 8, 0, 524339, 8, 0, 524340, 8, 0, 524341, 8, 0, 524342, 8, 0, 524343, 8, 0, 524344, 8, 0, 524345, 11, 0, 524373, 12, 0, 524374, 8, 0, 524375, 8, 0, 524376, 8, 0, 524377, 8, 0, 524378, 8, 0, 524379, 8, 0, 524380, 8, 0, 524381, 8, 0, 524382, 8, 0, 524383, 8, 0, 524384, 8, 0, 524385, 11, 0, 524400, 12, 0, 524401, 8, 0, 524402, 8, 0, 524403, 8, 0, 524404, 8, 0, 524405, 8, 0, 524406, 8, 0, 524407, 8, 0, 524408, 8, 0, 524409, 8, 0, 524410, 8, 0, 524411, 8, 0, 524412, 11, 0, 524423, 12, 0, 524424, 8, 0, 524425, 8, 0, 524426, 8, 0, 524427, 8, 0, 524428, 8, 0, 524429, 8, 0, 524430, 8, 0, 524431, 8, 0, 524432, 8, 0, 524433, 8, 0, 524434, 11, 0, 524455, 12, 0, 524456, 8, 0, 524457, 8, 0, 524458, 8, 0, 524459, 8, 0, 524460, 8, 0, 524461, 8, 0, 524462, 8, 0, 524463, 8, 0, 524464, 8, 0, 524465, 8, 0, 524466, 8, 0, 524467, 8, 0, 524468, 8, 0, 524469, 8, 0, 524470, 11, 0, 655353, 13, 0, 655354, 13, 0, 655355, 13, 0, 655356, 13, 0, 655357, 14, 0, 655358, 13, 0, 655359, 13, 0, 589824, 13, 0, 589825, 13, 0, 589826, 13, 0, 589827, 13, 0, 589828, 13, 0, 589829, 13, 0, 589830, 13, 0, 589831, 13, 0, 589832, 13, 0, 589833, 13, 0, 589834, 13, 0, 589835, 13, 0, 589836, 13, 0, 589846, 13, 0, 589847, 13, 0, 589848, 13, 0, 589849, 13, 0, 589850, 13, 0, 589851, 13, 0, 589852, 13, 0, 589853, 13, 0, 589854, 13, 0, 589855, 13, 0, 589856, 15, 0, 589870, 15, 0, 589871, 13, 0, 589872, 15, 0, 589873, 15, 0, 589874, 13, 0, 589875, 15, 0, 589876, 15, 0, 589877, 15, 0, 589878, 13, 0, 589879, 15, 0, 589880, 13, 0, 589910, 15, 0, 589911, 15, 0, 589912, 14, 0, 589913, 13, 0, 589914, 14, 0, 589915, 13, 0, 589916, 15, 0, 589917, 14, 0, 589918, 13, 0, 589919, 14, 0, 589920, 13, 0, 589937, 13, 0, 589938, 13, 0, 589939, 13, 0, 589940, 13, 0, 589941, 13, 0, 589942, 13, 0, 589943, 13, 0, 589944, 13, 0, 589945, 13, 0, 589946, 13, 0, 589947, 13, 0, 589960, 13, 0, 589961, 13, 0, 589962, 13, 0, 589963, 13, 0, 589964, 13, 0, 589965, 13, 0, 589966, 13, 0, 589967, 13, 0, 589968, 13, 0, 589969, 13, 0, 589980, 12, 0, 589981, 18, 0, 589982, 18, 0, 589983, 18, 0, 589984, 18, 0, 589985, 18, 0, 589986, 18, 0, 589987, 18, 0, 589988, 18, 0, 589989, 18, 0, 589990, 11, 0, 589992, 14, 0, 589993, 14, 0, 589994, 14, 0, 589995, 14, 0, 589996, 14, 0, 589997, 14, 0, 589998, 14, 0, 589999, 14, 0, 590000, 14, 0, 590001, 14, 0, 590002, 13, 0, 590003, 13, 0, 590004, 13, 0, 590005, 13, 0, 720889, 13, 0, 720890, 13, 0, 720891, 13, 0, 720892, 13, 0, 720893, 15, 0, 720894, 15, 0, 720895, 15, 0, 655360, 13, 0, 655361, 14, 0, 655362, 13, 0, 655363, 13, 0, 655364, 15, 0, 655365, 13, 0, 655366, 13, 0, 655367, 15, 0, 655368, 15, 0, 655369, 13, 0, 655370, 13, 0, 655371, 13, 0, 655372, 13, 0, 655382, 13, 0, 655383, 13, 0, 655384, 13, 0, 655385, 13, 0, 655386, 13, 0, 655387, 13, 0, 655388, 13, 0, 655389, 13, 0, 655390, 13, 0, 655391, 13, 0, 655392, 15, 0, 655406, 15, 0, 655407, 13, 0, 655408, 15, 0, 655409, 15, 0, 655410, 15, 0, 655411, 13, 0, 655412, 15, 0, 655413, 15, 0, 655414, 15, 0, 655415, 15, 0, 655416, 16, 0, 655446, 15, 0, 655447, 15, 0, 655448, 15, 0, 655449, 15, 0, 655450, 15, 0, 655451, 13, 0, 655452, 14, 0, 655453, 15, 0, 655454, 14, 0, 655455, 13, 0, 655456, 15, 0, 655473, 13, 0, 655474, 13, 0, 655475, 13, 0, 655476, 13, 0, 655477, 13, 0, 655478, 13, 0, 655479, 13, 0, 655480, 13, 0, 655481, 13, 0, 655482, 13, 0, 655483, 13, 0, 655496, 13, 0, 655497, 13, 0, 655498, 13, 0, 655499, 13, 0, 655500, 13, 0, 655501, 13, 0, 655502, 13, 0, 655503, 13, 0, 655504, 13, 0, 655505, 13, 0, 655528, 13, 0, 655529, 13, 0, 655530, 13, 0, 655531, 13, 0, 655532, 13, 0, 655533, 13, 0, 655534, 13, 0, 655535, 13, 0, 655536, 13, 0, 655537, 13, 0, 655538, 13, 0, 655539, 13, 0, 655540, 13, 0, 655541, 13, 0, 786425, 13, 0, 786426, 13, 0, 786427, 13, 0, 786428, 13, 0, 786429, 13, 0, 786430, 13, 0, 786431, 15, 0, 720896, 15, 0, 720897, 15, 0, 720898, 13, 0, 720899, 13, 0, 720900, 13, 0, 720901, 13, 0, 720902, 13, 0, 720903, 13, 0, 720904, 13, 0, 720905, 13, 0, 720906, 13, 0, 720907, 13, 0, 720908, 14, 0, 720918, 14, 0, 720919, 14, 0, 720920, 14, 0, 720921, 14, 0, 720922, 14, 0, 720923, 14, 0, 720924, 14, 0, 720925, 14, 0, 720926, 14, 0, 720927, 14, 0, 720928, 14, 0, 720942, 14, 0, 720943, 14, 0, 720944, 14, 0, 720945, 14, 0, 720946, 14, 0, 720947, 14, 0, 720948, 14, 0, 720949, 14, 0, 720950, 14, 0, 720951, 14, 0, 720952, 14, 0, 720982, 14, 0, 720983, 14, 0, 720984, 14, 0, 720985, 14, 0, 720986, 14, 0, 720987, 14, 0, 720988, 14, 0, 720989, 14, 0, 720990, 15, 0, 720991, 15, 0, 720992, 15, 0, 721009, 13, 0, 721010, 13, 0, 721011, 13, 0, 721012, 13, 0, 721013, 13, 0, 721014, 13, 0, 721015, 13, 0, 721016, 13, 0, 721017, 13, 0, 721018, 13, 0, 721019, 13, 0, 721032, 13, 0, 721033, 13, 0, 721034, 14, 0, 721035, 14, 0, 721036, 14, 0, 721037, 14, 0, 721038, 13, 0, 721039, 13, 0, 721040, 13, 0, 721041, 14, 0, 721064, 13, 0, 721065, 13, 0, 721066, 13, 0, 721067, 13, 0, 721068, 13, 0, 721069, 13, 0, 721070, 13, 0, 721071, 13, 0, 721072, 13, 0, 721073, 13, 0, 721074, 13, 0, 721075, 13, 0, 721076, 13, 0, 721077, 13, 0, 851961, 13, 0, 851962, 13, 0, 851963, 13, 0, 851964, 13, 0, 851965, 13, 0, 851966, 13, 0, 851967, 13, 0, 786432, 13, 0, 786433, 13, 0, 786434, 13, 0, 786435, 13, 0, 786436, 13, 0, 786437, 13, 0, 786438, 13, 0, 786439, 13, 0, 786440, 13, 0, 786441, 13, 0, 786442, 13, 0, 786443, 13, 0, 786444, 14, 0, 786454, 14, 0, 786455, 14, 0, 786456, 14, 0, 786457, 14, 0, 786458, 14, 0, 786459, 14, 0, 786460, 14, 0, 786461, 14, 0, 786462, 14, 0, 786463, 14, 0, 786464, 14, 0, 786478, 14, 0, 786479, 14, 0, 786480, 14, 0, 786481, 14, 0, 786482, 14, 0, 786483, 14, 0, 786484, 14, 0, 786485, 14, 0, 786486, 14, 0, 786487, 14, 0, 786488, 14, 0, 786518, 14, 0, 786519, 14, 0, 786520, 14, 0, 786521, 14, 0, 786522, 14, 0, 786523, 14, 0, 786524, 14, 0, 786525, 14, 0, 786526, 14, 0, 786527, 14, 0, 786528, 14, 0, 786545, 14, 0, 786546, 14, 0, 786547, 14, 0, 786548, 14, 0, 786549, 14, 0, 786550, 14, 0, 786551, 14, 0, 786552, 14, 0, 786553, 14, 0, 786554, 14, 0, 786555, 14, 0, 786568, 14, 0, 786569, 14, 0, 786570, 14, 0, 786571, 14, 0, 786572, 14, 0, 786573, 14, 0, 786574, 14, 0, 786575, 14, 0, 786576, 14, 0, 786577, 14, 0, 786600, 13, 0, 786601, 13, 0, 786602, 13, 0, 786603, 13, 0, 786604, 13, 0, 786605, 13, 0, 786606, 13, 0, 786607, 13, 0, 786608, 13, 0, 786609, 13, 0, 786610, 13, 0, 786611, 13, 0, 786612, 13, 0, 786613, 13, 0, 917497, 14, 0, 917498, 14, 0, 917499, 14, 0, 917500, 14, 0, 917501, 14, 0, 917502, 14, 0, 917503, 14, 0, 851968, 14, 0, 851969, 14, 0, 851970, 14, 0, 851971, 14, 0, 851972, 14, 0, 851973, 14, 0, 851974, 14, 0, 851975, 14, 0, 851976, 14, 0, 851977, 14, 0, 851978, 14, 0, 851979, 14, 0, 851980, 14, 0, 851990, 14, 0, 851991, 14, 0, 851992, 14, 0, 851993, 14, 0, 851994, 14, 0, 851995, 14, 0, 851996, 14, 0, 851997, 14, 0, 851998, 14, 0, 851999, 14, 0, 852000, 14, 0, 852014, 14, 0, 852015, 14, 0, 852016, 14, 0, 852017, 14, 0, 852018, 14, 0, 852019, 14, 0, 852020, 14, 0, 852021, 14, 0, 852022, 14, 0, 852023, 14, 0, 852024, 14, 0, 852054, 14, 0, 852055, 14, 0, 852056, 14, 0, 852057, 14, 0, 852058, 14, 0, 852059, 14, 0, 852060, 14, 0, 852061, 14, 0, 852062, 14, 0, 852063, 14, 0, 852064, 14, 0, 852081, 14, 0, 852082, 14, 0, 852083, 14, 0, 852084, 14, 0, 852085, 14, 0, 852086, 14, 0, 852087, 14, 0, 852088, 14, 0, 852089, 14, 0, 852090, 14, 0, 852091, 14, 0, 852104, 14, 0, 852105, 14, 0, 852106, 14, 0, 852107, 14, 0, 852108, 14, 0, 852109, 14, 0, 852110, 14, 0, 852111, 14, 0, 852112, 14, 0, 852113, 14, 0, 852136, 13, 0, 852137, 13, 0, 852138, 13, 0, 852139, 13, 0, 852140, 13, 0, 852141, 13, 0, 852142, 13, 0, 852143, 13, 0, 852144, 13, 0, 852145, 13, 0, 852146, 13, 0, 852147, 13, 0, 852148, 13, 0, 852149, 13, 0 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1024, 1400 )
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Sky"]
+material = SubResource( 1 )
+position = Vector2( -7.11188, -802.619 )
+scale = Vector2( 1.07035, 2.59761 )
+texture = ExtResource( 18 )
+centered = false
+
+[node name="Big Clouds" type="ParallaxLayer" parent="ParallaxBackground"]
+modulate = Color( 0.894118, 0.933333, 0.937255, 1 )
+motion_scale = Vector2( 0.25, 0.25 )
+motion_mirroring = Vector2( 800, 0 )
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Big Clouds"]
+position = Vector2( 0, -432 )
+scale = Vector2( 0.833291, 1.22295 )
+texture = ExtResource( 28 )
+centered = false
+
+[node name="Clouds 2" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
+motion_mirroring = Vector2( 1024, 600 )
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Clouds 2"]
+position = Vector2( 253.746, 236.109 )
+scale = Vector2( 1.60913, 0.63431 )
+texture = ExtResource( 5 )
+
+[node name="Mountains" type="ParallaxLayer" parent="ParallaxBackground"]
+modulate = Color( 0.708435, 0.820615, 0.828125, 0.25098 )
+motion_scale = Vector2( 0.4, 0.4 )
+motion_offset = Vector2( 0, -500 )
+motion_mirroring = Vector2( 1600, 0 )
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Mountains"]
+position = Vector2( -682.887, -302.788 )
+scale = Vector2( 1.78216, 2.01639 )
+texture = ExtResource( 19 )
+centered = false
+
+[node name="Trees" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.7, 0.7 )
+motion_mirroring = Vector2( 1120, 0 )
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Trees"]
+position = Vector2( -480.421, -399.308 )
+scale = Vector2( 1.75228, 1.85552 )
+texture = ExtResource( 4 )
+centered = false
+flip_h = true
+
+[node name="Sprite2" type="Sprite2D" parent="ParallaxBackground/Trees"]
+position = Vector2( -480.421, -234.945 )
+scale = Vector2( 1.75228, 1.85552 )
+texture = ExtResource( 4 )
+centered = false
+flip_h = true
+
+[node name="Small Clouds" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1024, 600 )
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Small Clouds"]
+position = Vector2( 592.418, 218.937 )
+texture = ExtResource( 21 )
+
+[node name="FallZone" type="Area2D" parent="."]
+position = Vector2( 1160.56, 862.476 )
+collision_layer = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallCollision" type="CollisionShape2D" parent="FallZone"]
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallZone2" type="Area2D" parent="."]
+position = Vector2( 2497.25, 929.657 )
+collision_layer = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallCollision" type="CollisionShape2D" parent="FallZone2"]
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallZone3" type="Area2D" parent="."]
+position = Vector2( 4613.69, 922.087 )
+collision_layer = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallCollision" type="CollisionShape2D" parent="FallZone3"]
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallZone4" type="Area2D" parent="."]
+position = Vector2( 6846.33, 927.572 )
+collision_layer = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallCollision" type="CollisionShape2D" parent="FallZone4"]
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallZone5" type="Area2D" parent="."]
+position = Vector2( 10534.3, 938.543 )
+collision_layer = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FallCollision" type="CollisionShape2D" parent="FallZone5"]
+shape = SubResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource( 9 )
+
+[node name="Panel" type="Panel" parent="HUD"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 198.0
+offset_bottom = 99.0
+theme_override_styles/panel = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="HUD"]
+offset_left = 30.5215
+offset_top = 35.086
+offset_right = 89.5215
+offset_bottom = 87.086
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="x" type="Label" parent="HUD"]
+offset_left = 96.0
+offset_top = 32.0
+offset_right = 128.0
+offset_bottom = 95.0
+theme_override_fonts/font = SubResource( 8 )
+theme_override_colors/font_color = Color( 0.952941, 0.784314, 0.211765, 1 )
+text = "x"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Coins" type="Label" parent="HUD"]
+offset_left = 120.544
+offset_top = 24.4692
+offset_right = 210.544
+offset_bottom = 108.469
+theme_override_fonts/font = SubResource( 9 )
+theme_override_colors/font_color = Color( 0.952941, 0.784314, 0.211765, 1 )
+text = "##"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Prompt" type="TextureRect" parent="HUD"]
+anchor_left = 0.00292969
+anchor_top = 0.00333333
+anchor_right = 0.00292969
+anchor_bottom = 0.00333333
+offset_left = 198.675
+offset_top = 14.0
+offset_right = 824.675
+offset_bottom = 238.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PromptTextLabel" type="RichTextLabel" parent="HUD/Prompt"]
+offset_left = 35.0
+offset_top = 34.0
+offset_right = 579.0
+offset_bottom = 82.0
+theme_override_fonts/normal_font = SubResource( 10 )
+theme_override_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+visible_characters = 0
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PromptTimer" type="Timer" parent="HUD/Prompt/PromptTextLabel"]
+wait_time = 0.03
+
+[node name="NextButton" type="TextureButton" parent="HUD/Prompt"]
+offset_left = 467.295
+offset_top = 175.344
+offset_right = 563.295
+offset_bottom = 207.344
+texture_normal = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="NextLabel" type="Label" parent="HUD/Prompt/NextButton"]
+offset_left = 30.1019
+offset_top = 11.3076
+offset_right = 81.1019
+offset_bottom = 31.3076
+theme_override_fonts/font = SubResource( 11 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Next"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContinueQuestButton" type="TextureButton" parent="HUD/Prompt"]
+offset_left = 465.106
+offset_top = 173.515
+offset_right = 593.106
+offset_bottom = 207.515
+texture_normal = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ContinueQuestTimer" type="Timer" parent="HUD/Prompt/ContinueQuestButton"]
+wait_time = 3.2
+one_shot = true
+
+[node name="ContinueQuestLabel" type="Label" parent="HUD/Prompt/ContinueQuestButton"]
+offset_left = 11.3581
+offset_top = 10.8889
+offset_right = 51.3581
+offset_bottom = 24.8889
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Quest"
+
+[node name="ContinueQuestHiderTimer" type="Timer" parent="HUD/Prompt/ContinueQuestButton"]
+wait_time = 1.5
+
+[node name="LearnWhyButton" type="TextureButton" parent="HUD/Prompt"]
+offset_left = 467.947
+offset_top = 127.462
+offset_right = 595.947
+offset_bottom = 159.462
+texture_normal = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="LearnWhyButtonLabel" type="Label" parent="HUD/Prompt/LearnWhyButton"]
+offset_left = 22.9704
+offset_top = 9.25864
+offset_right = 89.9704
+offset_bottom = 23.2586
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Learn Why"
+
+[node name="TryAgainButton" type="TextureButton" parent="HUD/Prompt"]
+offset_left = 484.0
+offset_top = 174.515
+offset_right = 592.0
+offset_bottom = 205.515
+texture_normal = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TryAgainTimer" type="Timer" parent="HUD/Prompt/TryAgainButton"]
+wait_time = 3.2
+one_shot = true
+
+[node name="TryAgainButtonLabel" type="Label" parent="HUD/Prompt/TryAgainButton"]
+offset_left = 25.4613
+offset_top = 8.62933
+offset_right = 86.4613
+offset_bottom = 22.6293
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Try Again"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Option1Button" type="TextureButton" parent="HUD/Prompt"]
+visible = false
+offset_left = 67.0
+offset_top = 82.0
+offset_right = 599.0
+offset_bottom = 114.0
+texture_normal = ExtResource( 17 )
+expand = true
+
+[node name="Option1ButtonLabel" type="Label" parent="HUD/Prompt/Option1Button"]
+offset_left = 18.6467
+offset_top = 10.015
+offset_right = 58.6467
+offset_bottom = 24.015
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Label"
+
+[node name="Option2Button" type="TextureButton" parent="HUD/Prompt"]
+visible = false
+offset_left = 67.0
+offset_top = 130.0
+offset_right = 598.0
+offset_bottom = 162.0
+texture_normal = ExtResource( 17 )
+expand = true
+
+[node name="Option2ButtonLabel" type="Label" parent="HUD/Prompt/Option2Button"]
+offset_left = 21.1504
+offset_top = 8.34586
+offset_right = 61.1504
+offset_bottom = 22.3459
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Label"
+
+[node name="Option3Button" type="TextureButton" parent="HUD/Prompt"]
+visible = false
+offset_left = 67.0
+offset_top = 178.0
+offset_right = 600.0
+offset_bottom = 210.0
+texture_normal = ExtResource( 17 )
+expand = true
+
+[node name="Option3ButtonLabel" type="Label" parent="HUD/Prompt/Option3Button"]
+offset_left = 21.985
+offset_top = 9.18045
+offset_right = 61.985
+offset_bottom = 23.1805
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Label"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LearnMore" type="TextureRect" parent="HUD"]
+visible = false
+offset_left = 284.0
+offset_top = 74.0
+offset_right = 791.0
+offset_bottom = 333.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LearnMoreLabel" type="RichTextLabel" parent="HUD/LearnMore"]
+offset_left = 34.0
+offset_top = 38.0
+offset_right = 488.0
+offset_bottom = 205.0
+theme_override_fonts/normal_font = SubResource( 12 )
+theme_override_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OkayButton" type="TextureButton" parent="HUD/LearnMore"]
+offset_left = 221.916
+offset_top = 203.005
+offset_right = 303.916
+offset_bottom = 242.005
+texture_normal = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="OkayButtonLabel" type="Label" parent="HUD/LearnMore/OkayButton"]
+offset_left = 13.5283
+offset_top = 11.141
+offset_right = 68.5283
+offset_bottom = 28.141
+theme_override_fonts/font = SubResource( 13 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Okay"
+
+[node name="ResourcesHolder" type="Control" parent="HUD"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="USResourcesButton" type="LinkButton" parent="HUD/ResourcesHolder"]
+offset_left = 211.407
+offset_top = 83.2709
+offset_right = 849.407
+offset_bottom = 154.271
+theme_override_fonts/font = SubResource( 14 )
+theme_override_colors/font_color = Color( 0.219608, 0.419608, 0.0313726, 1 )
+text = "US Resources"
+underline = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IrishResourcesButton" type="LinkButton" parent="HUD/ResourcesHolder"]
+offset_left = 196.919
+offset_top = 398.556
+offset_right = 923.919
+offset_bottom = 469.556
+theme_override_fonts/font = SubResource( 14 )
+theme_override_colors/font_color = Color( 0.219608, 0.419608, 0.0313726, 1 )
+text = "Irish Resources"
+underline = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenuButton2" type="Button" parent="HUD/ResourcesHolder"]
+offset_left = 298.56
+offset_top = 482.349
+offset_right = 792.56
+offset_bottom = 574.349
+theme_override_fonts/font = SubResource( 15 )
+theme_override_colors/font_color = Color( 0.219608, 0.419608, 0.0313726, 1 )
+text = "Main Menu"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RightAnswer" type="Control" parent="HUD"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="heartwon" type="Sprite2D" parent="HUD/RightAnswer"]
+position = Vector2( 455.005, 208.351 )
+scale = Vector2( 1.54032, 1.48077 )
+texture = ExtResource( 50 )
+
+[node name="HeartTimer" type="Timer" parent="HUD/RightAnswer/heartwon"]
+wait_time = 0.05
+
+[node name="YoureRight" type="Label" parent="HUD/RightAnswer"]
+visible = false
+offset_left = 288.0
+offset_top = 136.0
+offset_right = 686.0
+offset_bottom = 262.0
+theme_override_fonts/font = SubResource( 16 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Great Answer!"
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="plus" type="Sprite2D" parent="HUD/RightAnswer/YoureRight"]
+position = Vector2( 101.954, 70.9286 )
+texture = ExtResource( 11 )
+
+[node name="minus" type="Sprite2D" parent="HUD/RightAnswer/YoureRight"]
+position = Vector2( 99.4027, 72.0717 )
+rotation = -3.14159
+texture = ExtResource( 52 )
+
+[node name="LifeChangerTimer" type="Timer" parent="HUD/RightAnswer"]
+wait_time = 2.2
+
+[node name="LivesPanel3" type="Panel" parent="HUD"]
+anchor_left = -0.05
+offset_left = 1059.2
+offset_top = 104.0
+offset_right = 1181.0
+offset_bottom = 187.0
+rotation = 180.0
+theme_override_styles/panel = SubResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LivesPanel4" type="Panel" parent="HUD"]
+anchor_left = -0.05
+offset_left = 1059.2
+offset_top = 104.0
+offset_right = 1236.0
+offset_bottom = 187.0
+rotation = 180.0
+theme_override_styles/panel = SubResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LivesPanel5" type="Panel" parent="HUD"]
+anchor_left = -0.05
+offset_left = 1059.2
+offset_top = 184.0
+offset_right = 1067.0
+offset_bottom = 267.0
+rotation = 180.0
+theme_override_styles/panel = SubResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LivesPanel6" type="Panel" parent="HUD"]
+anchor_left = -0.05
+offset_left = 1059.2
+offset_top = 184.0
+offset_right = 1123.0
+offset_bottom = 267.0
+rotation = 180.0
+theme_override_styles/panel = SubResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LivesPanel7" type="Panel" parent="HUD"]
+anchor_left = -0.05
+offset_left = 1059.2
+offset_top = 184.0
+offset_right = 1179.0
+offset_bottom = 267.0
+rotation = 180.0
+theme_override_styles/panel = SubResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LivesPanel8" type="Panel" parent="HUD"]
+anchor_left = -0.05
+offset_left = 1059.2
+offset_top = 184.0
+offset_right = 1236.0
+offset_bottom = 267.0
+rotation = 180.0
+theme_override_styles/panel = SubResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LivesPanel9" type="Panel" parent="HUD"]
+anchor_left = -0.05
+offset_left = 1059.2
+offset_top = 184.0
+offset_right = 1302.0
+offset_bottom = 267.0
+rotation = 180.0
+theme_override_styles/panel = SubResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="heart3" type="Sprite2D" parent="HUD"]
+position = Vector2( 864, 64 )
+scale = Vector2( 1.54032, 1.48077 )
+texture = ExtResource( 50 )
+
+[node name="heart4" type="Sprite2D" parent="HUD"]
+position = Vector2( 808, 64 )
+scale = Vector2( 1.54032, 1.48077 )
+texture = ExtResource( 50 )
+
+[node name="heart5" type="Sprite2D" parent="HUD"]
+position = Vector2( 976, 136 )
+scale = Vector2( 1.54032, 1.48077 )
+texture = ExtResource( 50 )
+
+[node name="heart6" type="Sprite2D" parent="HUD"]
+position = Vector2( 920, 136 )
+scale = Vector2( 1.54032, 1.48077 )
+texture = ExtResource( 50 )
+
+[node name="heart7" type="Sprite2D" parent="HUD"]
+position = Vector2( 864, 136 )
+scale = Vector2( 1.54032, 1.48077 )
+texture = ExtResource( 50 )
+
+[node name="heart8" type="Sprite2D" parent="HUD"]
+position = Vector2( 808, 136 )
+scale = Vector2( 1.54032, 1.48077 )
+texture = ExtResource( 50 )
+
+[node name="heart9" type="Sprite2D" parent="HUD"]
+position = Vector2( 752, 136 )
+scale = Vector2( 1.54032, 1.48077 )
+texture = ExtResource( 50 )
+
+[node name="heart2" type="Sprite2D" parent="HUD"]
+position = Vector2( 919.545, 64 )
+scale = Vector2( 1.54032, 1.48077 )
+texture = ExtResource( 50 )
+
+[node name="heart1" type="Sprite2D" parent="HUD"]
+position = Vector2( 976, 64 )
+scale = Vector2( 1.54032, 1.48077 )
+texture = ExtResource( 50 )
+
+[node name="WhiteYoureRight" type="Label" parent="HUD"]
+visible = false
+offset_left = 325.405
+offset_top = 361.641
+offset_right = 819.405
+offset_bottom = 487.641
+theme_override_fonts/font = SubResource( 16 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Great Job!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="plus" type="Sprite2D" parent="HUD/WhiteYoureRight"]
+position = Vector2( 155.519, 74.8875 )
+texture = ExtResource( 11 )
+
+[node name="heartwon2" type="Sprite2D" parent="HUD/WhiteYoureRight"]
+position = Vector2( 217.062, 76.5881 )
+scale = Vector2( 1.54032, 1.48077 )
+texture = ExtResource( 50 )
+
+[node name="HeartTimer2" type="Timer" parent="HUD/WhiteYoureRight/heartwon2"]
+wait_time = 0.05
+
+[node name="RapidTimer" type="Timer" parent="HUD/WhiteYoureRight/heartwon2"]
+wait_time = 10.0
+
+[node name="WinHolder" type="Control" parent="HUD"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YouWin" type="Label" parent="HUD/WinHolder"]
+offset_left = 82.7065
+offset_top = 330.94
+offset_right = 943.707
+offset_bottom = 520.94
+theme_override_fonts/font = SubResource( 21 )
+text = "You Win!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quest Completed" type="Label" parent="HUD/WinHolder"]
+offset_left = 155.622
+offset_top = 58.0079
+offset_right = 1016.62
+offset_bottom = 248.008
+theme_override_fonts/font = SubResource( 22 )
+text = "Quest Completed!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Questions" type="Label" parent="HUD/WinHolder"]
+offset_left = 16.5807
+offset_top = 129.452
+offset_right = 1012.58
+offset_bottom = 319.452
+theme_override_fonts/font = SubResource( 23 )
+theme_override_colors/font_color = Color( 0.0666667, 0.403922, 0.427451, 1 )
+text = "Was this Game Fun?"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EndYes" type="Button" parent="HUD/WinHolder"]
+offset_left = 168.348
+offset_top = 409.075
+offset_right = 548.348
+offset_bottom = 501.076
+theme_override_fonts/font = SubResource( 24 )
+theme_override_colors/font_color = Color( 0.0666667, 0.403922, 0.427451, 1 )
+text = "YES"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EndNo" type="Button" parent="HUD/WinHolder"]
+offset_left = 423.403
+offset_top = 409.311
+offset_right = 803.403
+offset_bottom = 501.311
+theme_override_fonts/font = SubResource( 24 )
+theme_override_colors/font_color = Color( 0.0666667, 0.403922, 0.427451, 1 )
+text = "NO"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenuButton" type="Button" parent="HUD/WinHolder"]
+visible = false
+offset_left = 32.0
+offset_top = 400.0
+offset_right = 412.0
+offset_bottom = 492.0
+theme_override_fonts/font = SubResource( 25 )
+text = "Main Menu"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CreditsButton" type="Button" parent="HUD/WinHolder"]
+visible = false
+offset_top = 512.0
+offset_right = 380.0
+offset_bottom = 604.0
+theme_override_fonts/font = SubResource( 25 )
+text = "Credits"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResourcesButton" type="Button" parent="HUD/WinHolder"]
+visible = false
+offset_left = 480.0
+offset_top = 512.0
+offset_right = 1011.0
+offset_bottom = 604.0
+theme_override_fonts/font = SubResource( 26 )
+text = "Bullying Resources"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="HUD/WinHolder"]
+offset_left = 308.568
+offset_top = 404.472
+offset_right = 691.568
+offset_bottom = 494.472
+theme_override_icons/clear = ExtResource( 25 )
+theme_override_styles/normal = SubResource( 27 )
+theme_override_fonts/font = SubResource( 28 )
+placeholder_text = "Enter Text Here"
+placeholder_alpha = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EnterButton" type="TextureButton" parent="HUD/WinHolder/LineEdit"]
+offset_left = 101.963
+offset_top = 81.5475
+offset_right = 231.963
+offset_bottom = 124.548
+texture_normal = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HUD/WinHolder/LineEdit/EnterButton"]
+offset_left = 26.8962
+offset_top = 13.0
+offset_right = 101.896
+offset_bottom = 37.0
+theme_override_fonts/font = SubResource( 29 )
+text = "Enter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit2" type="LineEdit" parent="HUD/WinHolder"]
+visible = false
+offset_left = 308.568
+offset_top = 404.472
+offset_right = 691.568
+offset_bottom = 494.472
+theme_override_icons/clear = ExtResource( 25 )
+theme_override_styles/normal = SubResource( 27 )
+theme_override_fonts/font = SubResource( 28 )
+placeholder_text = "Enter Text Here"
+placeholder_alpha = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EnterButton" type="TextureButton" parent="HUD/WinHolder/LineEdit2"]
+offset_left = 101.963
+offset_top = 81.5475
+offset_right = 231.963
+offset_bottom = 124.548
+texture_normal = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HUD/WinHolder/LineEdit2/EnterButton"]
+offset_left = 26.8962
+offset_top = 13.0
+offset_right = 101.896
+offset_bottom = 37.0
+theme_override_fonts/font = SubResource( 29 )
+text = "Enter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Coin Holder" type="Node2D" parent="."]
+
+[node name="Coin1" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( -119.228, 390.297 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin2" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 1024, 96 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin3" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 928, 160 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin4" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 832, 224 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin5" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 1789.21, 333.342 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin8" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 2440.01, 141.152 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin6" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 3042.59, -43.7366 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin7" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 6183.68, 346.498 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin9" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 3289.9, 385.508 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin10" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 3584.41, 264.808 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin11" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 4784, -16 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin12" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 4880, -16 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin13" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 4960, -16 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin14" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 5438.66, 234.95 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin15" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 6707.36, 295.364 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin16" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 6976.9, 142.006 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin17" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 7581.04, 360.426 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin18" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 10244.1, 436.933 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin19" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 8445.29, 214.532 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin20" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 8544.26, 214.315 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin21" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 10646.8, 369.698 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin24" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 11484.9, 214.496 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin25" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 11484.9, 307.617 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin22" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 9825.46, 266.62 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Coin23" parent="Coin Holder" instance=ExtResource( 6 )]
+position = Vector2( 10128.1, 438.783 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Enemy Holder" type="Node2D" parent="."]
+
+[node name="Enemy" parent="Enemy Holder" instance=ExtResource( 10 )]
+position = Vector2( 6.17065, 285.808 )
+
+[node name="Enemy2" parent="Enemy Holder" instance=ExtResource( 10 )]
+position = Vector2( 9050.44, 477.737 )
+
+[node name="Enemy10" parent="Enemy Holder" instance=ExtResource( 10 )]
+position = Vector2( 10351.6, 559.73 )
+
+[node name="Enemy3" parent="Enemy Holder" instance=ExtResource( 10 )]
+position = Vector2( 416, 384 )
+direction = 1
+
+[node name="Enemy4" parent="Enemy Holder" instance=ExtResource( 10 )]
+position = Vector2( 896, 224 )
+direction = 1
+
+[node name="Enemy5" parent="Enemy Holder" instance=ExtResource( 10 )]
+position = Vector2( 4838.79, 102.141 )
+direction = 1
+
+[node name="Enemy9" parent="Enemy Holder" instance=ExtResource( 10 )]
+position = Vector2( 7504.36, 486.291 )
+direction = 1
+
+[node name="Enemy6" parent="Enemy Holder" instance=ExtResource( 10 )]
+position = Vector2( 3075.24, 293.28 )
+direction = 1
+
+[node name="Enemy7" parent="Enemy Holder" instance=ExtResource( 10 )]
+position = Vector2( 4049.81, 233.362 )
+direction = 1
+
+[node name="Enemy8" parent="Enemy Holder" instance=ExtResource( 10 )]
+position = Vector2( 5730.67, 490.88 )
+direction = 1
+
+[node name="HallwayHolder" type="Node2D" parent="."]
+position = Vector2( 1285.37, -196.489 )
+
+[node name="HallwayImage" type="Sprite2D" parent="HallwayHolder"]
+position = Vector2( 1415.25, -522.382 )
+scale = Vector2( 0.216266, 0.290173 )
+texture = ExtResource( 27 )
+
+[node name="Victim1" parent="HallwayHolder" instance=ExtResource( 2 )]
+position = Vector2( 1270.08, -366.903 )
+scale = Vector2( 0.7, 0.7 )
+
+[node name="Bully1" parent="HallwayHolder" instance=ExtResource( 12 )]
+position = Vector2( 1359.78, -362.825 )
+scale = Vector2( 0.7, 0.7 )
+collision_mask = 2147483648
+
+[node name="Bystander1" parent="HallwayHolder" instance=ExtResource( 14 )]
+position = Vector2( 1044.67, -288.831 )
+scale = Vector2( 0.9, 0.9 )
+
+[node name="BullyZone" type="Area2D" parent="HallwayHolder"]
+position = Vector2( 1428.38, -420.059 )
+collision_layer = 2147483712
+
+[node name="BullyCollisionShape2D" type="CollisionShape2D" parent="HallwayHolder/BullyZone"]
+position = Vector2( 175.058, -56.3747 )
+shape = SubResource( 30 )
+
+[node name="Salamandar" parent="HallwayHolder" instance=ExtResource( 23 )]
+position = Vector2( 1031.09, -582.472 )
+
+[node name="BedroomHolder" type="Node2D" parent="."]
+position = Vector2( 1586.75, -113.989 )
+
+[node name="Bedroom" type="Sprite2D" parent="BedroomHolder"]
+position = Vector2( 2804.61, -663.103 )
+scale = Vector2( 0.148238, 0.222294 )
+texture = ExtResource( 26 )
+
+[node name="Bully2" parent="BedroomHolder" instance=ExtResource( 15 )]
+position = Vector2( 2592.07, -410.121 )
+scale = Vector2( 0.7, 0.7 )
+
+[node name="Bully3" parent="BedroomHolder" instance=ExtResource( 32 )]
+position = Vector2( 2673.82, -412.913 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Tripod" type="Sprite2D" parent="BedroomHolder"]
+position = Vector2( 2773.89, -426.851 )
+scale = Vector2( 0.130671, 0.173696 )
+texture = ExtResource( 33 )
+
+[node name="Phone" type="Sprite2D" parent="BedroomHolder"]
+position = Vector2( 2772.79, -489.974 )
+scale = Vector2( 0.0243235, 0.0289296 )
+texture = ExtResource( 31 )
+
+[node name="BullyZone2" type="Area2D" parent="BedroomHolder"]
+collision_layer = 2147483712
+
+[node name="BullyCollisionShape2D" type="CollisionShape2D" parent="BedroomHolder/BullyZone2"]
+position = Vector2( 2842.14, -530.268 )
+shape = SubResource( 31 )
+
+[node name="BedroomCamera" type="Camera2D" parent="BedroomHolder"]
+position = Vector2( 2811.89, -648.712 )
+
+[node name="ClassroomHolder" type="Node2D" parent="."]
+position = Vector2( 7819.1, -587.06 )
+scale = Vector2( 0.219719, 0.300634 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Classroom Image" type="Sprite2D" parent="ClassroomHolder"]
+position = Vector2( 566.77, 572.281 )
+scale = Vector2( 0.773923, 0.669292 )
+texture = ExtResource( 36 )
+
+[node name="LessonLabel" type="Label" parent="ClassroomHolder"]
+offset_left = 264.955
+offset_top = 168.463
+offset_right = 1544.96
+offset_bottom = 393.463
+theme_override_fonts/font = SubResource( 32 )
+text = "Today's Lesson:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LessonLabel2" type="Label" parent="ClassroomHolder"]
+offset_left = -77.0
+offset_top = 337.0
+offset_right = 1537.0
+offset_bottom = 429.0
+theme_override_fonts/font = SubResource( 32 )
+text = "Dragons.... What do they eat?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LessonLabel3" type="Label" parent="ClassroomHolder"]
+offset_left = -164.121
+offset_top = 524.753
+offset_right = 1732.88
+offset_bottom = 749.753
+theme_override_fonts/font = SubResource( 32 )
+text = "Unicorns... Where Can we find them?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bully4" parent="ClassroomHolder" instance=ExtResource( 35 )]
+position = Vector2( 856.906, 1249.21 )
+scale = Vector2( 3, 2 )
+
+[node name="Salamander2" parent="ClassroomHolder" instance=ExtResource( 23 )]
+position = Vector2( 2244.44, 151.667 )
+scale = Vector2( 2, 2 )
+
+[node name="Bystander2" parent="ClassroomHolder" instance=ExtResource( 37 )]
+position = Vector2( -1125.83, 1165.91 )
+scale = Vector2( 3.64102, 2.66105 )
+
+[node name="Bystander3" parent="ClassroomHolder" instance=ExtResource( 38 )]
+position = Vector2( -776.912, 1170.75 )
+scale = Vector2( 3.64102, 2.66105 )
+
+[node name="Bystander4" parent="ClassroomHolder" instance=ExtResource( 39 )]
+position = Vector2( 1697.26, 1090.57 )
+scale = Vector2( 3.18589, 2.32842 )
+
+[node name="Bystander5" parent="ClassroomHolder" instance=ExtResource( 40 )]
+position = Vector2( 2014.47, 1084.77 )
+scale = Vector2( 3.64102, 2.66105 )
+
+[node name="ClassroomBullyZone" type="Area2D" parent="ClassroomHolder"]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClassroomHolder/ClassroomBullyZone"]
+position = Vector2( 621.983, 901.519 )
+shape = SubResource( 33 )
+
+[node name="ClassroomCamera" type="Camera2D" parent="ClassroomHolder"]
+position = Vector2( 576.275, 577.661 )
+position_smoothing_enabled = true
+
+[node name="Victim2" parent="ClassroomHolder" instance=ExtResource( 42 )]
+position = Vector2( 1270.14, 1225.91 )
+scale = Vector2( 3.4, 2.3 )
+
+[node name="ClassroomRedoSignal2" type="Area2D" parent="ClassroomHolder"]
+position = Vector2( -9410.95, 1507.94 )
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClassroomHolder/ClassroomRedoSignal2"]
+position = Vector2( 9948.33, -1441.14 )
+shape = SubResource( 34 )
+
+[node name="LockerRoomHolder" type="Node2D" parent="."]
+position = Vector2( 5884.3, 60.751 )
+scale = Vector2( 0.85, 0.8 )
+
+[node name="LockerRoomImage" type="Sprite2D" parent="LockerRoomHolder"]
+position = Vector2( 130.002, -406.554 )
+scale = Vector2( 0.175513, 0.238046 )
+texture = ExtResource( 44 )
+
+[node name="hockeystick" type="Sprite2D" parent="LockerRoomHolder"]
+position = Vector2( 42.8594, -227.529 )
+scale = Vector2( 0.0838782, 0.0943851 )
+texture = ExtResource( 47 )
+
+[node name="Bystander6" parent="LockerRoomHolder" instance=ExtResource( 45 )]
+position = Vector2( 264.848, -186.441 )
+scale = Vector2( 0.705882, 0.75 )
+
+[node name="Bystander8" parent="LockerRoomHolder" instance=ExtResource( 40 )]
+position = Vector2( 371.649, -136.503 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="phone" type="Sprite2D" parent="LockerRoomHolder"]
+position = Vector2( 150.5, -221.896 )
+scale = Vector2( 0.0218855, 0.0347319 )
+texture = ExtResource( 31 )
+
+[node name="basketball" type="Sprite2D" parent="LockerRoomHolder"]
+position = Vector2( -195.188, -283.497 )
+scale = Vector2( 0.0369497, 0.0314012 )
+texture = ExtResource( 46 )
+
+[node name="Football" type="Sprite2D" parent="LockerRoomHolder"]
+position = Vector2( 374.719, -277.077 )
+scale = Vector2( 0.0240834, 0.0321919 )
+texture = ExtResource( 48 )
+
+[node name="Bystander7" parent="LockerRoomHolder" instance=ExtResource( 43 )]
+position = Vector2( -59.9302, -121.732 )
+scale = Vector2( 0.941177, 0.875 )
+
+[node name="LockerRoomBullyZone" type="Area2D" parent="LockerRoomHolder"]
+position = Vector2( -156.439, -243.091 )
+scale = Vector2( 0.258493, 0.375793 )
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LockerRoomHolder/LockerRoomBullyZone"]
+position = Vector2( 1136.35, -122.322 )
+shape = SubResource( 34 )
+
+[node name="LockerRoomRedoSignal" type="Area2D" parent="LockerRoomHolder"]
+position = Vector2( -156.439, -243.091 )
+scale = Vector2( 0.258493, 0.375793 )
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LockerRoomHolder/LockerRoomRedoSignal"]
+position = Vector2( 1256.24, -1173.78 )
+shape = SubResource( 34 )
+
+[node name="LockerRoomCamera" type="Camera2D" parent="LockerRoomHolder"]
+position = Vector2( 133.145, -394.218 )
+scale = Vector2( 0.258493, 0.375793 )
+position_smoothing_enabled = true
+
+[node name="Hint" type="Node2D" parent="."]
+
+[node name="left_arrow" type="Sprite2D" parent="Hint"]
+position = Vector2( 1572.05, 238.817 )
+scale = Vector2( 1.1764, 0.955455 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="Hint"]
+offset_left = 1594.0
+offset_top = 222.0
+offset_right = 1763.0
+offset_bottom = 317.0
+theme_override_fonts/font = SubResource( 35 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Catch the vine to fly with the dragon"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HintArea" type="Area2D" parent="Hint"]
+
+[node name="HintCollision" type="CollisionShape2D" parent="Hint/HintArea"]
+position = Vector2( 1282.36, 306.766 )
+shape = SubResource( 36 )
+
+[node name="HintTimer" type="Timer" parent="Hint"]
+wait_time = 5.0
+
+[node name="RapidHolder" type="Node2D" parent="."]
+position = Vector2( 450.9, -620.27 )
+
+[node name="TextureRect" type="TextureRect" parent="RapidHolder"]
+offset_left = 480.0
+offset_top = -111.0
+offset_right = 1582.0
+offset_bottom = 509.0
+texture = ExtResource( 53 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeaderRect" type="TextureRect" parent="RapidHolder"]
+offset_left = 671.774
+offset_top = -74.6755
+offset_right = 1340.77
+offset_bottom = -0.675484
+texture = SubResource( 37 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeaderLabel" type="Label" parent="RapidHolder/HeaderRect"]
+offset_left = 112.076
+offset_top = 11.5941
+offset_right = 588.076
+offset_bottom = 62.5941
+theme_override_fonts/font = SubResource( 38 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Is it Bullying?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BodyRect" type="TextureRect" parent="RapidHolder"]
+offset_left = 673.774
+offset_top = 134.991
+offset_right = 1342.77
+offset_bottom = 430.991
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SituationsLabel" type="Label" parent="RapidHolder/BodyRect"]
+offset_left = 49.3511
+offset_top = 40.2216
+offset_right = 625.351
+offset_bottom = 181.222
+theme_override_fonts/font = SubResource( 39 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Read each case and say if it is bullying.  Answer as many as you can!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LaterHolder" type="Node2D" parent="RapidHolder/BodyRect"]
+
+[node name="IsItLabel" type="Label" parent="RapidHolder/BodyRect/LaterHolder"]
+offset_left = 219.0
+offset_top = 155.0
+offset_right = 450.0
+offset_bottom = 197.0
+theme_override_fonts/font = SubResource( 39 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Is this bullying?"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Yes" type="TextureButton" parent="RapidHolder/BodyRect/LaterHolder"]
+offset_left = 54.0
+offset_top = 207.0
+offset_right = 303.0
+offset_bottom = 266.0
+texture_normal = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YesLabel" type="Label" parent="RapidHolder/BodyRect/LaterHolder/Yes"]
+offset_left = 73.0541
+offset_top = 12.0
+offset_right = 152.054
+offset_bottom = 48.0
+theme_override_fonts/font = SubResource( 40 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Yes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="No" type="TextureButton" parent="RapidHolder/BodyRect/LaterHolder"]
+offset_left = 348.636
+offset_top = 207.0
+offset_right = 597.636
+offset_bottom = 266.0
+texture_normal = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NoLabel" type="Label" parent="RapidHolder/BodyRect/LaterHolder/No"]
+offset_left = 89.1986
+offset_top = 11.9999
+offset_right = 168.199
+offset_bottom = 47.9999
+theme_override_fonts/font = SubResource( 40 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "No"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RapidUI" type="Control" parent="RapidHolder"]
+offset_top = -1.20538
+offset_bottom = -1.20538
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReadyLabel" type="Label" parent="RapidHolder/RapidUI"]
+offset_left = 555.468
+offset_top = -0.695742
+offset_right = 1575.47
+offset_bottom = 186.304
+theme_override_fonts/font = SubResource( 41 )
+text = "Ready"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReadySetTimer" type="Timer" parent="RapidHolder/RapidUI/ReadyLabel"]
+wait_time = 2.0
+
+[node name="GoTimer" type="Timer" parent="RapidHolder/RapidUI/ReadyLabel/ReadySetTimer"]
+wait_time = 0.8
+
+[node name="TimeLabel" type="Label" parent="RapidHolder/RapidUI"]
+offset_left = 1116.23
+offset_top = 15.8961
+offset_right = 1260.23
+offset_bottom = 116.896
+theme_override_fonts/font = SubResource( 42 )
+text = "25"
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TimeTimer" type="Timer" parent="RapidHolder/RapidUI/TimeLabel"]
+
+[node name="StartTimer" type="Timer" parent="RapidHolder"]
+wait_time = 3.0
+
+[node name="RapidBullyZone" type="Area2D" parent="RapidHolder"]
+position = Vector2( -2538.85, 179.12 )
+scale = Vector2( 0.219719, 0.300634 )
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RapidHolder/RapidBullyZone"]
+position = Vector2( 16198.6, -600.096 )
+shape = SubResource( 43 )
+
+[node name="RapidCameraChangeZone" type="Area2D" parent="RapidHolder"]
+position = Vector2( -2538.85, 180.12 )
+scale = Vector2( 0.219719, 0.300634 )
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RapidHolder/RapidCameraChangeZone"]
+position = Vector2( 16226.9, -217.608 )
+shape = SubResource( 44 )
+
+[node name="RapidCamera" type="Camera2D" parent="RapidHolder"]
+position = Vector2( 1019.82, 191.555 )
+scale = Vector2( 0.219719, 0.300634 )
+position_smoothing_enabled = true
+
+[node name="DoneRect" type="TextureRect" parent="RapidHolder"]
+visible = false
+offset_left = 656.676
+offset_top = 65.3038
+offset_right = 1345.68
+offset_bottom = 444.303
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WellDoneLabel" type="Label" parent="RapidHolder/DoneRect"]
+offset_left = 72.8113
+offset_top = 96.6399
+offset_right = 648.811
+offset_bottom = 237.64
+theme_override_fonts/font = SubResource( 45 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Well Done!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LearnMoreButton" type="TextureButton" parent="RapidHolder/DoneRect"]
+offset_left = 53.896
+offset_top = 288.338
+offset_right = 332.896
+offset_bottom = 343.338
+texture_normal = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LearnMoreLabel" type="Label" parent="RapidHolder/DoneRect/LearnMoreButton"]
+offset_left = 46.6167
+offset_top = 13.9851
+offset_right = 221.617
+offset_bottom = 39.9851
+theme_override_fonts/font = SubResource( 46 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Learn More"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContinueButton" type="TextureButton" parent="RapidHolder/DoneRect"]
+offset_left = 368.338
+offset_top = 289.446
+offset_right = 647.338
+offset_bottom = 344.446
+texture_normal = SubResource( 47 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContinueLabel" type="Label" parent="RapidHolder/DoneRect/ContinueButton"]
+offset_left = 23.3081
+offset_top = 13.9851
+offset_right = 272.308
+offset_bottom = 39.9851
+theme_override_fonts/font = SubResource( 46 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_outline_color = Color( 0, 0, 0, 1 )
+text = "Continue Quest"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContinueTimer" type="Timer" parent="RapidHolder/DoneRect/ContinueButton"]
+
+[node name="EndHolder" type="Node2D" parent="."]
+
+[node name="EndCollisionZone" type="Area2D" parent="EndHolder"]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EndHolder/EndCollisionZone"]
+position = Vector2( 9507.32, 27.5727 )
+shape = SubResource( 48 )
+
+[node name="DragonHolder" type="Node2D" parent="."]
+
+[node name="HallwayDragon" parent="DragonHolder" instance=ExtResource( 20 )]
+position = Vector2( 2857.67, 0 )
+script = ExtResource( 29 )
+
+[node name="Vine" type="Area2D" parent="DragonHolder/HallwayDragon"]
+position = Vector2( -726.813, -375.609 )
+collision_layer = 0
+
+[node name="vine" type="Sprite2D" parent="DragonHolder/HallwayDragon/Vine"]
+position = Vector2( 672.53, 486.052 )
+scale = Vector2( 1.05432, 5.82704 )
+texture = ExtResource( 30 )
+
+[node name="VineCollision" type="CollisionShape2D" parent="DragonHolder/HallwayDragon/Vine"]
+position = Vector2( 670.685, 429.477 )
+scale = Vector2( 1, 1.72536 )
+shape = SubResource( 49 )
+
+[node name="HallwayVineBounceBack" type="Area2D" parent="DragonHolder/HallwayDragon"]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DragonHolder/HallwayDragon/HallwayVineBounceBack"]
+position = Vector2( -58.8576, -290.599 )
+shape = SubResource( 50 )
+
+[node name="BedroomDragon" parent="DragonHolder" instance=ExtResource( 20 )]
+position = Vector2( 4569.67, -46.5032 )
+script = ExtResource( 34 )
+
+[node name="Vine2" type="Area2D" parent="DragonHolder/BedroomDragon"]
+position = Vector2( -0.000242233, -16 )
+collision_layer = 0
+
+[node name="vine" type="Sprite2D" parent="DragonHolder/BedroomDragon/Vine2"]
+position = Vector2( -55.6858, 79.9251 )
+scale = Vector2( 1, 4.10658 )
+texture = ExtResource( 30 )
+
+[node name="vine2Collision" type="CollisionShape2D" parent="DragonHolder/BedroomDragon/Vine2"]
+position = Vector2( -57.9192, 62.5032 )
+shape = SubResource( 51 )
+
+[node name="BedroomVineBounceBack" type="Area2D" parent="DragonHolder/BedroomDragon"]
+position = Vector2( -1409.8, 277.512 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DragonHolder/BedroomDragon/BedroomVineBounceBack"]
+position = Vector2( 1351.64, -561.05 )
+shape = SubResource( 50 )
+
+[node name="RapidDragon" parent="DragonHolder" instance=ExtResource( 20 )]
+position = Vector2( 1532.42, 136 )
+script = ExtResource( 54 )
+
+[node name="RapidVine" type="Area2D" parent="DragonHolder/RapidDragon"]
+position = Vector2( 349.245, -31.4538 )
+collision_layer = 0
+
+[node name="vine" type="Sprite2D" parent="DragonHolder/RapidDragon/RapidVine"]
+position = Vector2( -403.66, 100.921 )
+scale = Vector2( 1, 4.28214 )
+texture = ExtResource( 30 )
+
+[node name="DragonVineCollision" type="CollisionShape2D" parent="DragonHolder/RapidDragon/RapidVine"]
+position = Vector2( -405.662, 169.187 )
+shape = SubResource( 51 )
+
+[node name="RapidVineBounceBack2" type="Area2D" parent="DragonHolder/RapidDragon"]
+position = Vector2( -3004.84, 323.601 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DragonHolder/RapidDragon/RapidVineBounceBack2"]
+position = Vector2( 2950.91, -643.365 )
+shape = SubResource( 50 )
+
+[node name="LockerRoomDragon" parent="DragonHolder" instance=ExtResource( 20 )]
+position = Vector2( 6035.73, 300.691 )
+script = ExtResource( 49 )
+
+[node name="LockerRoomVine" type="Area2D" parent="DragonHolder/LockerRoomDragon"]
+position = Vector2( 353.588, -31.4538 )
+collision_layer = 0
+
+[node name="vine" type="Sprite2D" parent="DragonHolder/LockerRoomDragon/LockerRoomVine"]
+position = Vector2( -406.53, 215.406 )
+scale = Vector2( 1, 8.91952 )
+texture = ExtResource( 30 )
+
+[node name="lockerroomvinecollision" type="CollisionShape2D" parent="DragonHolder/LockerRoomDragon/LockerRoomVine"]
+position = Vector2( -407.635, 130.346 )
+shape = SubResource( 51 )
+
+[node name="LockerVineBounceBack3" type="Area2D" parent="DragonHolder/LockerRoomDragon"]
+position = Vector2( -4518.62, -103.678 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DragonHolder/LockerRoomDragon/LockerVineBounceBack3"]
+position = Vector2( 4459.98, -183.338 )
+shape = SubResource( 50 )
+
+[node name="ClassroomDragon" parent="DragonHolder" instance=ExtResource( 20 )]
+position = Vector2( 7933.49, 30.9236 )
+script = ExtResource( 41 )
+
+[node name="ClassroomVine" type="Area2D" parent="DragonHolder/ClassroomDragon"]
+position = Vector2( 353.588, -31.4538 )
+collision_layer = 0
+
+[node name="vine" type="Sprite2D" parent="DragonHolder/ClassroomDragon/ClassroomVine"]
+position = Vector2( -404.309, 135.992 )
+scale = Vector2( 1, 5.64665 )
+texture = ExtResource( 30 )
+
+[node name="vine2Collision" type="CollisionShape2D" parent="DragonHolder/ClassroomDragon/ClassroomVine"]
+position = Vector2( -406.221, 105.911 )
+shape = SubResource( 51 )
+
+[node name="ClassroomVineBounceBack4" type="Area2D" parent="DragonHolder/ClassroomDragon"]
+position = Vector2( -6415.29, 163.802 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DragonHolder/ClassroomDragon/ClassroomVineBounceBack4"]
+position = Vector2( 6364.69, -430.456 )
+shape = SubResource( 50 )
+
+[node name="EndDragon" parent="DragonHolder" instance=ExtResource( 20 )]
+position = Vector2( 9579.43, 191.024 )
+script = ExtResource( 51 )
+
+[node name="EndVine" type="Area2D" parent="DragonHolder/EndDragon"]
+collision_layer = 0
+
+[node name="vine" type="Sprite2D" parent="DragonHolder/EndDragon/EndVine"]
+position = Vector2( -54.4463, 54.6747 )
+scale = Vector2( 1, 3.7172 )
+texture = ExtResource( 30 )
+
+[node name="endvinecollision" type="CollisionShape2D" parent="DragonHolder/EndDragon/EndVine"]
+position = Vector2( -56.0107, 77.8429 )
+shape = SubResource( 52 )
+
+[node name="EndVineBounceBack5" type="Area2D" parent="DragonHolder/EndDragon"]
+position = Vector2( -8061.23, 5.745 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DragonHolder/EndDragon/EndVineBounceBack5"]
+position = Vector2( 8014.88, -298.48 )
+shape = SubResource( 50 )
+
+[node name="VeryEndDragon" parent="DragonHolder" instance=ExtResource( 20 )]
+position = Vector2( 10930.3, 341.512 )
+collision_mask = 1
+script = ExtResource( 16 )
+
+[node name="VeryEndVine" type="Area2D" parent="DragonHolder/VeryEndDragon"]
+collision_layer = 0
+
+[node name="vine" type="Sprite2D" parent="DragonHolder/VeryEndDragon/VeryEndVine"]
+position = Vector2( -54.4463, 54.6747 )
+scale = Vector2( 1, 3.7172 )
+texture = ExtResource( 30 )
+
+[node name="endvinecollision" type="CollisionShape2D" parent="DragonHolder/VeryEndDragon/VeryEndVine"]
+position = Vector2( -56.0107, 77.8429 )
+shape = SubResource( 52 )
+
+[node name="EndVineBounceBack5" type="Area2D" parent="DragonHolder/VeryEndDragon"]
+position = Vector2( -8061.23, 5.745 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DragonHolder/VeryEndDragon/EndVineBounceBack5"]
+position = Vector2( 8000.93, -272.791 )
+shape = SubResource( 50 )
+
+[node name="VeryEndCollisionShape" type="Area2D" parent="DragonHolder/VeryEndDragon"]
+position = Vector2( -10930.3, -345.012 )
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DragonHolder/VeryEndDragon/VeryEndCollisionShape"]
+position = Vector2( 11236.6, -304.992 )
+shape = SubResource( 53 )
+
+[node name="EndMoveTimer" type="Timer" parent="DragonHolder/VeryEndDragon"]
+wait_time = 7.0
+
+[node name="YouWinDragon" parent="DragonHolder" instance=ExtResource( 20 )]
+position = Vector2( 11871.9, 222.545 )
+collision_mask = 1
+script = ExtResource( 22 )
+
+[node name="YouWinVine" type="Area2D" parent="DragonHolder/YouWinDragon"]
+collision_layer = 0
+
+[node name="vine" type="Sprite2D" parent="DragonHolder/YouWinDragon/YouWinVine"]
+position = Vector2( -54.4463, 54.6747 )
+scale = Vector2( 1, 3.7172 )
+texture = ExtResource( 30 )
+
+[node name="endvinecollision" type="CollisionShape2D" parent="DragonHolder/YouWinDragon/YouWinVine"]
+position = Vector2( -56.0107, 77.8429 )
+shape = SubResource( 52 )
+
+[node name="EndVineBounceBack5" type="Area2D" parent="DragonHolder/YouWinDragon"]
+position = Vector2( -8061.23, 5.745 )
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DragonHolder/YouWinDragon/EndVineBounceBack5"]
+position = Vector2( 8000.93, -272.791 )
+shape = SubResource( 50 )
+
+[node name="VeryEndCollisionShape" type="Area2D" parent="DragonHolder/YouWinDragon"]
+position = Vector2( -10930.3, -345.012 )
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DragonHolder/YouWinDragon/VeryEndCollisionShape"]
+position = Vector2( 10861.5, 236.707 )
+shape = SubResource( 54 )
+
+[node name="EndMoveTimer" type="Timer" parent="DragonHolder/YouWinDragon"]
+wait_time = 7.0
+
+[node name="WinTimer" type="Timer" parent="DragonHolder/YouWinDragon"]
+wait_time = 4.0
+
+[node name="TestArea" type="Area2D" parent="DragonHolder"]
+position = Vector2( 10862.8, 61.6829 )
+collision_layer = 0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Test" type="CollisionShape2D" parent="DragonHolder/TestArea"]
+shape = SubResource( 55 )
+
+[node name="SavePoint1" type="Area2D" parent="."]
+collision_layer = 128
+
+[node name="SavePoint" type="CollisionShape2D" parent="SavePoint1"]
+position = Vector2( 1586.76, 301.675 )
+shape = SubResource( 56 )
+
+[node name="SavePoint2" type="Area2D" parent="."]
+collision_layer = 128
+
+[node name="SavePoint" type="CollisionShape2D" parent="SavePoint2"]
+position = Vector2( 3021.64, 279.69 )
+shape = SubResource( 56 )
+
+[node name="SavePoint3" type="Area2D" parent="."]
+collision_layer = 128
+
+[node name="SavePoint" type="CollisionShape2D" parent="SavePoint3"]
+position = Vector2( 6152.47, 300.02 )
+shape = SubResource( 56 )
+
+[node name="SavePoint4" type="Area2D" parent="."]
+
+[node name="SavePoint" type="CollisionShape2D" parent="SavePoint4"]
+position = Vector2( 8282.04, 188.205 )
+shape = SubResource( 56 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( -6.35352, 12.707 )
+collision_mask = 33
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 4956.85, -2181.75 )
+shape = SubResource( 57 )
+
+[node name="MovedCameraHolder" type="Node" parent="."]
+
+[node name="LockerRoomCamera2" type="Camera2D" parent="MovedCameraHolder"]
+position = Vector2( 9524.29, -445.909 )
+
+[node name="RapidCamera2" type="Camera2D" parent="MovedCameraHolder"]
+position = Vector2( 9471.94, -458.996 )
+
+[node name="RapidCamera3" type="Camera2D" parent="MovedCameraHolder"]
+position = Vector2( 10907.6, -411.439 )
+
+[node name="RapidCamera3Timer" type="Timer" parent="MovedCameraHolder/RapidCamera3"]
+wait_time = 1.3
+
+[node name="ClassroomCamera2Low" type="Camera2D" parent="MovedCameraHolder"]
+position = Vector2( 9630.56, -386.679 )
+
+[node name="ClassroomCamera3High" type="Camera2D" parent="MovedCameraHolder"]
+position = Vector2( 9607.17, -1276.35 )
+
+[node name="ResetCollision" type="Area2D" parent="."]
+position = Vector2( 8689.65, 444.204 )
+collision_layer = 0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ResetCollision"]
+shape = SubResource( 58 )
+[connection signal="body_entered" from="FallZone" to="." method="_on_FallZone_body_entered"]
+[connection signal="body_entered" from="FallZone2" to="." method="_on_FallZone_body_entered"]
+[connection signal="body_entered" from="FallZone3" to="." method="_on_FallZone_body_entered"]
+[connection signal="body_entered" from="FallZone4" to="." method="_on_FallZone_body_entered"]
+[connection signal="body_entered" from="FallZone5" to="." method="_on_FallZone_body_entered"]
+[connection signal="timeout" from="HUD/Prompt/PromptTextLabel/PromptTimer" to="." method="_on_PromptTimer_timeout"]
+[connection signal="pressed" from="HUD/Prompt/NextButton" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="HUD/Prompt/ContinueQuestButton" to="." method="_on_ContinueQuestButton_pressed"]
+[connection signal="timeout" from="HUD/Prompt/ContinueQuestButton/ContinueQuestTimer" to="." method="_on_ContinueQuestTimer_timeout"]
+[connection signal="timeout" from="HUD/Prompt/ContinueQuestButton/ContinueQuestHiderTimer" to="." method="_on_ContinueQuestHiderTimer_timeout"]
+[connection signal="pressed" from="HUD/Prompt/LearnWhyButton" to="." method="_on_LearnWhyButton_pressed"]
+[connection signal="pressed" from="HUD/Prompt/TryAgainButton" to="." method="_on_TryAgainButton_pressed"]
+[connection signal="timeout" from="HUD/Prompt/TryAgainButton/TryAgainTimer" to="." method="_on_TryAgainTimer_timeout"]
+[connection signal="pressed" from="HUD/Prompt/Option1Button" to="." method="_on_Option1Button_pressed"]
+[connection signal="pressed" from="HUD/Prompt/Option2Button" to="." method="_on_Option2Button_pressed"]
+[connection signal="pressed" from="HUD/Prompt/Option3Button" to="." method="_on_Option3Button_pressed"]
+[connection signal="pressed" from="HUD/LearnMore/OkayButton" to="." method="_on_OkayButton_pressed"]
+[connection signal="pressed" from="HUD/ResourcesHolder/USResourcesButton" to="." method="_on_USResourcesButton_pressed"]
+[connection signal="pressed" from="HUD/ResourcesHolder/IrishResourcesButton" to="." method="_on_IrishResourcesButton_pressed"]
+[connection signal="pressed" from="HUD/ResourcesHolder/MainMenuButton2" to="." method="_on_MainMenuButton_pressed"]
+[connection signal="timeout" from="HUD/RightAnswer/heartwon/HeartTimer" to="." method="_on_HeartTimer_timeout"]
+[connection signal="timeout" from="HUD/RightAnswer/LifeChangerTimer" to="." method="_on_RightAnswerTimer_timeout"]
+[connection signal="timeout" from="HUD/WhiteYoureRight/heartwon2/HeartTimer2" to="." method="_on_HeartTimer_timeout"]
+[connection signal="timeout" from="HUD/WhiteYoureRight/heartwon2/RapidTimer" to="." method="_on_RapidTimer_timeout"]
+[connection signal="pressed" from="HUD/WinHolder/EndYes" to="." method="_on_EndYes_pressed"]
+[connection signal="pressed" from="HUD/WinHolder/EndNo" to="." method="_on_EndNo_pressed"]
+[connection signal="pressed" from="HUD/WinHolder/MainMenuButton" to="." method="_on_MainMenuButton_pressed"]
+[connection signal="pressed" from="HUD/WinHolder/CreditsButton" to="." method="_on_CreditsButton_pressed"]
+[connection signal="pressed" from="HUD/WinHolder/ResourcesButton" to="." method="_on_ResourcesButton_pressed"]
+[connection signal="pressed" from="HUD/WinHolder/LineEdit/EnterButton" to="." method="_on_EnterButton_pressed"]
+[connection signal="pressed" from="HUD/WinHolder/LineEdit2/EnterButton" to="." method="_on_EnterButton_pressed"]
+[connection signal="coin_collected" from="Coin Holder/Coin1" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin2" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin3" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin4" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin5" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin8" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin6" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin7" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin9" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin10" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin11" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin12" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin13" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin14" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin15" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin16" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin17" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin18" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin19" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin20" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin21" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin24" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin25" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin22" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coin Holder/Coin23" to="HUD" method="_on_coin_collected"]
+[connection signal="body_entered" from="HallwayHolder/BullyZone" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="BedroomHolder/BullyZone2" to="." method="_on_BullyZone2_body_entered"]
+[connection signal="body_entered" from="ClassroomHolder/ClassroomBullyZone" to="." method="_on_ClassroomBullyZone_body_entered"]
+[connection signal="body_entered" from="ClassroomHolder/ClassroomRedoSignal2" to="." method="_on_ClassroomRedoSignal2_body_entered"]
+[connection signal="body_entered" from="LockerRoomHolder/LockerRoomBullyZone" to="." method="_on_LockerRoomBullyZone2_body_entered"]
+[connection signal="body_entered" from="LockerRoomHolder/LockerRoomRedoSignal" to="." method="_on_LockerRoomRedoSignal_body_entered"]
+[connection signal="body_entered" from="Hint/HintArea" to="." method="_on_HintArea_body_entered"]
+[connection signal="timeout" from="Hint/HintTimer" to="." method="_on_HintTimer_timeout"]
+[connection signal="pressed" from="RapidHolder/BodyRect/LaterHolder/Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="RapidHolder/BodyRect/LaterHolder/No" to="." method="_on_No_pressed"]
+[connection signal="timeout" from="RapidHolder/RapidUI/ReadyLabel/ReadySetTimer" to="." method="_on_ReadySetTimer_timeout"]
+[connection signal="timeout" from="RapidHolder/RapidUI/ReadyLabel/ReadySetTimer/GoTimer" to="." method="_on_GoTimer_timeout"]
+[connection signal="timeout" from="RapidHolder/RapidUI/TimeLabel/TimeTimer" to="." method="_on_TimeTimer_timeout"]
+[connection signal="timeout" from="RapidHolder/StartTimer" to="." method="_on_StartTimer_timeout"]
+[connection signal="body_entered" from="RapidHolder/RapidBullyZone" to="." method="_on_RapidBullyZone_body_entered"]
+[connection signal="body_entered" from="RapidHolder/RapidCameraChangeZone" to="." method="_on_RapidCameraChangeZone_body_entered"]
+[connection signal="pressed" from="RapidHolder/DoneRect/LearnMoreButton" to="." method="_on_LearnMoreButton_pressed"]
+[connection signal="pressed" from="RapidHolder/DoneRect/ContinueButton" to="." method="_on_ContinueButton_pressed"]
+[connection signal="timeout" from="RapidHolder/DoneRect/ContinueButton/ContinueTimer" to="." method="_on_ContinueTimer_timeout"]
+[connection signal="body_entered" from="EndHolder/EndCollisionZone" to="." method="_on_EndCollisionZone_body_entered"]
+[connection signal="body_entered" from="DragonHolder/HallwayDragon/Vine" to="." method="_on_Vine_body_entered"]
+[connection signal="body_entered" from="DragonHolder/HallwayDragon/HallwayVineBounceBack" to="." method="_on_Bounce_Back_body_entered"]
+[connection signal="body_entered" from="DragonHolder/BedroomDragon/Vine2" to="." method="_on_Vine2_body_entered"]
+[connection signal="body_entered" from="DragonHolder/BedroomDragon/BedroomVineBounceBack" to="." method="_on_Bounce_Back_body_entered"]
+[connection signal="body_entered" from="DragonHolder/RapidDragon/RapidVine" to="." method="_on_RapidVine_body_entered"]
+[connection signal="body_entered" from="DragonHolder/RapidDragon/RapidVineBounceBack2" to="." method="_on_Bounce_Back_body_entered"]
+[connection signal="body_entered" from="DragonHolder/LockerRoomDragon/LockerRoomVine" to="." method="_on_LockerRoomVine_body_entered"]
+[connection signal="body_entered" from="DragonHolder/LockerRoomDragon/LockerVineBounceBack3" to="." method="_on_Bounce_Back_body_entered"]
+[connection signal="body_entered" from="DragonHolder/ClassroomDragon/ClassroomVine" to="." method="_on_ClassroomVine_body_entered"]
+[connection signal="body_entered" from="DragonHolder/ClassroomDragon/ClassroomVineBounceBack4" to="." method="_on_Bounce_Back_body_entered"]
+[connection signal="body_entered" from="DragonHolder/EndDragon/EndVine" to="." method="_on_EndVine_body_entered"]
+[connection signal="body_entered" from="DragonHolder/EndDragon/EndVineBounceBack5" to="." method="_on_Bounce_Back_body_entered"]
+[connection signal="body_entered" from="DragonHolder/VeryEndDragon/VeryEndVine" to="." method="_on_VeryEndVine_body_entered"]
+[connection signal="body_entered" from="DragonHolder/VeryEndDragon/EndVineBounceBack5" to="." method="_on_Bounce_Back_body_entered"]
+[connection signal="body_entered" from="DragonHolder/VeryEndDragon/VeryEndCollisionShape" to="." method="_on_VeryEndCollisionShape_body_entered"]
+[connection signal="timeout" from="DragonHolder/VeryEndDragon/EndMoveTimer" to="." method="_on_EndMoveTimer_timeout"]
+[connection signal="body_entered" from="DragonHolder/YouWinDragon/YouWinVine" to="." method="_on_YouWinVine_body_entered"]
+[connection signal="body_entered" from="DragonHolder/YouWinDragon/EndVineBounceBack5" to="." method="_on_Bounce_Back_body_entered"]
+[connection signal="body_entered" from="DragonHolder/YouWinDragon/VeryEndCollisionShape" to="." method="_on_VeryEndCollisionShape_body_entered"]
+[connection signal="timeout" from="DragonHolder/YouWinDragon/EndMoveTimer" to="." method="_on_EndMoveTimer_timeout"]
+[connection signal="timeout" from="DragonHolder/YouWinDragon/WinTimer" to="." method="_on_WinTimer_timeout"]
+[connection signal="body_entered" from="DragonHolder/TestArea" to="." method="_on_TestArea_body_entered"]
+[connection signal="body_entered" from="SavePoint1" to="." method="_on_SavePoint1_body_entered"]
+[connection signal="body_entered" from="SavePoint2" to="." method="_on_SavePoint2_body_entered"]
+[connection signal="body_entered" from="SavePoint3" to="." method="_on_SavePoint3_body_entered"]
+[connection signal="body_entered" from="SavePoint4" to="." method="_on_SavePoint4_body_entered"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="timeout" from="MovedCameraHolder/RapidCamera3/RapidCamera3Timer" to="." method="_on_RapidCamera3Timer_timeout"]
+[connection signal="body_entered" from="ResetCollision" to="." method="_on_ResetCollision_body_entered"]

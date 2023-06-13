@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Fonts/KiriFont.ttf" type="FontFile" id=1]
+[ext_resource path="res://YouWinButton.gd" type="Script" id=2]
+
+[sub_resource type="FontFile" id=1]
+size = 100
+font_data = ExtResource( 1 )
+
+[sub_resource type="FontFile" id=2]
+size = 40
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="ColorRect" parent="."]
+modulate = Color( 0.580392, 0, 0.827451, 1 )
+offset_right = 1024.0
+offset_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YouWinLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -288.0
+offset_top = -172.0
+offset_right = 286.0
+offset_bottom = -71.0
+theme_override_fonts/font = SubResource( 1 )
+text = "You Win!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YouWinButton" type="Button" parent="."]
+offset_left = 393.792
+offset_top = 273.132
+offset_right = 597.792
+offset_bottom = 348.132
+theme_override_fonts/font = SubResource( 2 )
+theme_override_colors/font_hover_color = Color( 0.0313726, 0.0196078, 0.0196078, 0.984314 )
+theme_override_colors/font_pressed_color = Color( 0.278431, 0.0117647, 0.396078, 1 )
+text = "Menu"
+flat = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="YouWinButton" to="YouWinButton" method="_on_YouWinButton_pressed"]
