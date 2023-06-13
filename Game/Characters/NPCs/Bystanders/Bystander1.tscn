@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwifuae75splr"]
+
+[ext_resource type="Texture2D" uid="uid://daap0ml34jwlr" path="res://Bystanders/bystander1/IdleMelee-Stand/0.png" id="1_288yd"]
+[ext_resource type="Texture2D" uid="uid://ba35uc2d3jhcd" path="res://Bystanders/bystander1/IdleMelee-Stand/1.png" id="2_msd43"]
+[ext_resource type="Texture2D" uid="uid://cmve47i4xbqos" path="res://Bystanders/bystander1/IdleMelee-Stand/2.png" id="3_scsco"]
+[ext_resource type="Texture2D" uid="uid://cdx6qa7hjl4de" path="res://Bystanders/bystander1/IdleMelee-Stand/3.png" id="4_ec6o3"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_288yd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_msd43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_scsco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ec6o3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="1"]
+position = Vector2(2.958, -22.924)
+scale = Vector2(1.28886, 1.39863)
+sprite_frames = SubResource("1")
+animation = &"idle"
+frame = 1
+flip_h = true

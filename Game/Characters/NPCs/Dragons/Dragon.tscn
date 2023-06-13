@@ -1,0 +1,41 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="PackedScene" path="res://NPCs/NPC.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://wf4hwqwjimqn" path="res://DragonPNG/New Folder With Items/4.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cvdjo34v4h41q" path="res://DragonPNG/New Folder With Items/3.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dwx2keoyrvle3" path="res://DragonPNG/New Folder With Items 2/2.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b2rrsbpbwadf7" path="res://DragonPNG/New Folder With Items 2/4.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://buu7c8668xdup" path="res://DragonPNG/New Folder With Items 2/3.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bt2dl01ldaidm" path="res://DragonPNG/New Folder With Items 2/1.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://btfcwctlj1br5" path="res://DragonPNG/New Folder With Items/1.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://81ayouuv4l3r" path="res://DragonPNG/New Folder With Items/2.png" id="9"]
+
+[sub_resource type="RectangleShape2D" id=1]
+size = Vector2( 68.5157, 24.8767 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "up",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "fly",
+"speed": 5.0
+} ]
+
+[node name="Dragon" instance=ExtResource( 1 )]
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="1"]
+position = Vector2( -0.361382, -20.5645 )
+scale = Vector2( 0.511748, 0.47479 )
+frames = SubResource( 2 )
+animation = "fly"
+frame = 3
+playing = true
+flip_h = true
