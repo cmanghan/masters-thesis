@@ -1,0 +1,96 @@
+[gd_scene load_steps=19 format=3 uid="uid://5l16j2fkno0v"]
+
+[ext_resource type="PackedScene" path="res://Player.tscn" id="1_yb476"]
+[ext_resource type="Texture2D" uid="uid://bft3pfx5bc805" path="res://Main Characters/Character2/IdleMelee-Jump/0.png" id="2_gj83k"]
+[ext_resource type="Texture2D" uid="uid://caiwcpts5trbn" path="res://Main Characters/Character2/IdleMelee-Jump/1.png" id="3_ywqdn"]
+[ext_resource type="Texture2D" uid="uid://dotw5y47c1hrg" path="res://Main Characters/Character2/IdleMelee-Jump/2.png" id="4_34b5j"]
+[ext_resource type="Texture2D" uid="uid://86x02assclql" path="res://Main Characters/Character2/IdleMelee-Jump/3.png" id="5_q2cqo"]
+[ext_resource type="Texture2D" uid="uid://bjch4mmhi4if2" path="res://Main Characters/Character2/Dummy/IdleMelee-Climb/0.png" id="6_8m3lm"]
+[ext_resource type="Texture2D" uid="uid://c64b5itu5qasj" path="res://Main Characters/Character2/Dummy/IdleMelee-Climb/1.png" id="7_lgxjv"]
+[ext_resource type="Texture2D" uid="uid://oft85v3nlxie" path="res://Main Characters/Character2/Dummy/IdleMelee-Climb/2.png" id="8_fpgm6"]
+[ext_resource type="Texture2D" uid="uid://crhyksfl1tgwb" path="res://Main Characters/Character2/Dummy/IdleMelee-Climb/3.png" id="9_vxjqu"]
+[ext_resource type="Texture2D" uid="uid://btkv52doaq0ia" path="res://Main Characters/Character2/IdleMelee-Stand/0.png" id="10_vrasf"]
+[ext_resource type="Texture2D" uid="uid://dsm1iqhgrr77b" path="res://Main Characters/Character2/IdleMelee-Stand/1.png" id="11_aabw7"]
+[ext_resource type="Texture2D" uid="uid://bpeq0qmrndi3q" path="res://Main Characters/Character2/IdleMelee-Stand/2.png" id="12_kpl8k"]
+[ext_resource type="Texture2D" uid="uid://b24smpn88f8b1" path="res://Main Characters/Character2/IdleMelee-Stand/3.png" id="13_k5tiy"]
+[ext_resource type="Texture2D" uid="uid://535qk44f5kak" path="res://Main Characters/Character2/IdleMelee-Run/0.png" id="14_6tn5q"]
+[ext_resource type="Texture2D" uid="uid://dbh7siq3w46tv" path="res://Main Characters/Character2/IdleMelee-Run/1.png" id="15_70m5r"]
+[ext_resource type="Texture2D" uid="uid://dqw2ygaxw3a8g" path="res://Main Characters/Character2/IdleMelee-Run/2.png" id="16_62nrc"]
+[ext_resource type="Texture2D" uid="uid://dm82kv66hlgp7" path="res://Main Characters/Character2/IdleMelee-Run/3.png" id="17_2cekv"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gj83k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ywqdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_34b5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_q2cqo")
+}],
+"loop": true,
+"name": &"air",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_8m3lm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lgxjv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fpgm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vxjqu")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_vrasf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_aabw7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kpl8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_k5tiy")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_6tn5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_70m5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_62nrc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2cekv")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Player" instance=ExtResource("1_yb476")]
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." index="5"]
+sprite_frames = SubResource("1")
+animation = &"fly"

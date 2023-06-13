@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://PLayer.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sound Effects/jump1.ogg" type="AudioStream" id=2]
+[ext_resource path="res://Assets/Sound Effects/error_007.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Sound Effects/jingles_PIZZA07.ogg" type="AudioStream" id=4]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 27.4308
+height = 59.2611
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1.14272, -9.27925 )
+shape = SubResource( 1 )
+
+[node name="HitTimer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="SoundJump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -12.0
+pitch_scale = 1.2
+
+[node name="SoundHurt" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -8.0
+
+[node name="SoundFall" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = -445
+limit_right = 100000
+limit_bottom = 3700
+limit_smoothed = true
+position_smoothing_enabled = true
+drag_left_margin = 0.3
+drag_top_margin = 0.13
+drag_right_margin = 0.3
+drag_bottom_margin = 0.13
+[connection signal="timeout" from="HitTimer" to="." method="_on_HitTimer_timeout"]

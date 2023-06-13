@@ -1,0 +1,52 @@
+[gd_scene load_steps=20 format=3]
+
+[ext_resource type="PackedScene" path="res://Player.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://csnra1m41x3bw" path="res://Main Characters/Character1/IdleMelee-Stand/0.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cd5uuq6h6glyy" path="res://Main Characters/Character1/IdleMelee-Stand/1.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://ct4702sararad" path="res://Main Characters/Character1/IdleMelee-Stand/2.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dldqxag5vp632" path="res://Main Characters/Character1/IdleMelee-Stand/3.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cvjmkiluyvt3p" path="res://Main Characters/Character1/IdleMelee-Run/0.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cfjsouc7kb4oa" path="res://Main Characters/Character1/IdleMelee-Climb/1.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://djdvjn1hjdirp" path="res://Main Characters/Character1/IdleMelee-Climb/0.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cwvwuedr0bc11" path="res://Main Characters/Character1/IdleMelee-Jump/3.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://dp4t48ph1msfa" path="res://Main Characters/Character1/IdleMelee-Run/2.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://b8dec64y2mtis" path="res://Main Characters/Character1/IdleMelee-Run/3.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://m0ahfgbvwfr2" path="res://Main Characters/Character1/IdleMelee-Jump/2.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://crlsewb46t0o1" path="res://Main Characters/Character1/IdleMelee-Run/1.png" id="13"]
+[ext_resource type="Script" path="res://Main Characters/ChildPlayer.gd" id="14"]
+[ext_resource type="Texture2D" uid="uid://b4tm2fj4c4ny6" path="res://Main Characters/Character1/IdleMelee-Climb/3.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bmx57bs5yceig" path="res://Main Characters/Character1/IdleMelee-Climb/2.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://mulpefp5fttv" path="res://Main Characters/Character1/IdleMelee-Jump/1.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://d1v7esteoeaqa" path="res://Main Characters/Character1/IdleMelee-Jump/0.png" id="18"]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 17 ), ExtResource( 12 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "air",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 13 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 16 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "fly",
+"speed": 5.0
+} ]
+
+[node name="Player" instance=ExtResource( 1 )]
+script = ExtResource( 14 )
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." index="5"]
+frames = SubResource( 1 )
+animation = "idle"
+frame = 2
+playing = true
